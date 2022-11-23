@@ -8,7 +8,7 @@ Anyone interested in our work is welcome to use Pull Request(P&R) to participate
 
 1. **Ask First.** Please ask first Before embarking on any significant pull request(e.g. implementing features, refactoring code...).
 2. **Licensing.** By submitting a patch, you agree that your code will be licensed under the same hippie license that YOURLS uses, aka the "Do whatever the hell you want with it" license. 
-3. **Quality Requirements.** Make sure your code adhere to [Google Coding Standards](https://google.github.io/styleguide/pyguide.html). Otherwise, there will be unexpected results when generating code documents. Besides, if your P&R is about merging a new model, it is required to keep the result error within the allowable range.
+3. **Quality Requirements.** Make sure your code adhere to [Google Coding Standards](https://google.github.io/styleguide/pyguide.html). Otherwise, there will be unexpected results when generating code documents. <u>Besides, if your P&R is about merging a new model, it is required to **keep the result error within the allowable range(±1.0%)**.</u>
 
 ## P&R Comment Standard
 
