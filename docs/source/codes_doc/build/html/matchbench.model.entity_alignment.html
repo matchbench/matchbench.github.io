@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>matchbench.model.entity_alignment package &mdash; matchbench 1.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> matchbench
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">matchbench.model.entity_alignment package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-matchbench.model.entity_alignment.Dual_AMN">matchbench.model.entity_alignment.Dual_AMN module</a></li>
+<li><a class="reference internal" href="#module-matchbench.model.entity_alignment.bertint">matchbench.model.entity_alignment.bertint module</a></li>
+<li><a class="reference internal" href="#module-matchbench.model.entity_alignment.kecg">matchbench.model.entity_alignment.kecg module</a></li>
+<li><a class="reference internal" href="#module-matchbench.model.entity_alignment.rrea">matchbench.model.entity_alignment.rrea module</a></li>
+<li><a class="reference internal" href="#module-matchbench.model.entity_alignment">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">matchbench</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">matchbench.model.entity_alignment package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/matchbench.model.entity_alignment.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="matchbench-model-entity-alignment-package">
+<h1>matchbench.model.entity_alignment package<a class="headerlink" href="#matchbench-model-entity-alignment-package" title="Permalink to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-matchbench.model.entity_alignment.Dual_AMN">
+<span id="matchbench-model-entity-alignment-dual-amn-module"></span><h2>matchbench.model.entity_alignment.Dual_AMN module<a class="headerlink" href="#module-matchbench.model.entity_alignment.Dual_AMN" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.Dual_AMN.Dual_AMN">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">matchbench.model.entity_alignment.Dual_AMN.</span></span><span class="sig-name descname"><span class="pre">Dual_AMN</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">triple_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">353543</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">39654</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_node_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">39654</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rel_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4224</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alpha</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">beta</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">depth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_hidden</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">128</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rel_hidden</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">128</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dropout_rate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nearest_sample_num</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">128</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ind_dropout_rate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gamma</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">device(type='cuda',</span> <span class="pre">index=0)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.Dual_AMN.Dual_AMN" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="matchbench.model.html#matchbench.model.base_model.EAModel" title="matchbench.model.base_model.EAModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">EAModel</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.Dual_AMN.Dual_AMN.encode">
+<span class="sig-name descname"><span class="pre">encode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">batch</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.Dual_AMN.Dual_AMN.encode" title="Permalink to this definition"></a></dt>
+<dd><p>for PLMs, serialization -&gt; CLS embedding (trainable)
+for pretrained word embedding, pair -&gt; embedding (untrainable)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.Dual_AMN.Dual_AMN.get_emb">
+<span class="sig-name descname"><span class="pre">get_emb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">loader</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">device(type='cuda')</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.Dual_AMN.Dual_AMN.get_emb" title="Permalink to this definition"></a></dt>
+<dd><p>Convert a list of entities token ids to a list of embedding after encoder.
+:param loader:
+:type loader: <cite>torch.data.utils.DataLoader</cite>
+:param device: cuda or cpu.
+:type device: <cite>torch.device</cite>, <em>optional</em>, defaults to <cite>“cuda”</cite></p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the output embeddings of the encoder.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>torch.tensor</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.Dual_AMN.Dual_AMN.load_source_target">
+<span class="sig-name descname"><span class="pre">load_source_target</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataset_src</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataset_tgt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stage</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.Dual_AMN.Dual_AMN.load_source_target" title="Permalink to this definition"></a></dt>
+<dd><p>Prepare source and target data.
+:param dataset_src: Source dataset.
+:type dataset_src: <cite>datasets.arrow_dataset.Dataset</cite>
+:param dataset_tgt: Target dataset.
+:type dataset_tgt: <cite>datasets.arrow_dataset.Dataset</cite></p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.Dual_AMN.Dual_AMN.predict">
+<span class="sig-name descname"><span class="pre">predict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataloader</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">device(type='cuda')</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.Dual_AMN.Dual_AMN.predict" title="Permalink to this definition"></a></dt>
+<dd><p>Predict the closest entities of each entity in test set.
+:param dataloader:
+:type dataloader: <cite>torch.data.utils.DataLoader</cite></p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>top indexes.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><cite>torch.tensor</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.Dual_AMN.Dual_AMN.prepare_dataloader">
+<span class="sig-name descname"><span class="pre">prepare_dataloader</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataset</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">split</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'train'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.Dual_AMN.Dual_AMN.prepare_dataloader" title="Permalink to this definition"></a></dt>
+<dd><p>for PLMs, serialize
+for PWEs, encode</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.Dual_AMN.Dual_AMN.run_step">
+<span class="sig-name descname"><span class="pre">run_step</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">train_pairs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.Dual_AMN.Dual_AMN.run_step" title="Permalink to this definition"></a></dt>
+<dd><p>Args: batch data
+Returns: loss</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.Dual_AMN.Dual_AMN.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#matchbench.model.entity_alignment.Dual_AMN.Dual_AMN.training" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.Dual_AMN.NR_GraphAttention">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">matchbench.model.entity_alignment.Dual_AMN.</span></span><span class="sig-name descname"><span class="pre">NR_GraphAttention</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rel_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">triple_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_dim</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">depth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attn_heads</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attn_heads_reduction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'concat'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_bias</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.Dual_AMN.NR_GraphAttention" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.Dual_AMN.NR_GraphAttention.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">inputs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.Dual_AMN.NR_GraphAttention.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.Dual_AMN.NR_GraphAttention.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#matchbench.model.entity_alignment.Dual_AMN.NR_GraphAttention.training" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-matchbench.model.entity_alignment.bertint">
+<span id="matchbench-model-entity-alignment-bertint-module"></span><h2>matchbench.model.entity_alignment.bertint module<a class="headerlink" href="#module-matchbench.model.entity_alignment.bertint" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.bertint.Basic_Bert_Unit_model">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">matchbench.model.entity_alignment.bertint.</span></span><span class="sig-name descname"><span class="pre">Basic_Bert_Unit_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">plm_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">basic_input_dim</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">basic_output_dim</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dropout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">encoder_model</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.bertint.Basic_Bert_Unit_model" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<p>The class for <cite>BertInt</cite> approach Basic_Bert_Unit_model unit.</p>
+<dl class="simple">
+<dt>Class attributes:</dt><dd><ul class="simple">
+<li><p><strong>plm_path</strong> (<cite>str</cite>) – The local pretrained language model path.</p></li>
+<li><p><strong>basic_input_dim</strong> (<cite>int</cite>) – The input dimension of Basic_Bert_Unit_model.</p></li>
+<li><p><strong>basic_output_dim</strong> (<cite>int</cite>) – The output dimension of Basic_Bert_Unit_model.</p></li>
+<li><p><strong>dropout</strong> (<cite>float</cite>) – The probability of nn.Dropout function.</p></li>
+<li><p><strong>encodermodel</strong> (<cite>transformers.PretrainedModel</cite>) – User defined plm model.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.bertint.Basic_Bert_Unit_model.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">batch</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.bertint.Basic_Bert_Unit_model.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.bertint.Basic_Bert_Unit_model.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#matchbench.model.entity_alignment.bertint.Basic_Bert_Unit_model.training" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.bertint.BertInt">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">matchbench.model.entity_alignment.bertint.</span></span><span class="sig-name descname"><span class="pre">BertInt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">if_neg_sample</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_seq_length</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">128</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nearest_sample_num</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">128</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">basic_input_dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">768</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">basic_output_dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">300</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mlp_input_dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">85</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mlp_hidden_dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">11</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dropout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">margin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plm_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tokenizer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">encodermodel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.bertint.BertInt" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="matchbench.model.html#matchbench.model.base_model.EAModel" title="matchbench.model.base_model.EAModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">EAModel</span></code></a></p>
+<p>The class for <cite>BertInt</cite> approach.</p>
+<dl>
+<dt>Class attributes:</dt><dd><p>Data/Feature generation
+- <strong>if_neg_sample</strong> (<cite>bool</cite>) – If the approach need negtive sampling or not.
+- <strong>max_seq_length</strong> (<cite>int</cite>) – The max length of tokens fed into PLMs.
+- <strong>get_emb_batch</strong> (<cite>int</cite>) – The batch size when getting the PLM embedding of all the entities.
+- <strong>nearest_sample_num</strong> (<cite>int</cite>) – The generated candidates number when negtive sampling.
+- <strong>train_batch_size</strong></p>
+<p>Model architecture / Loss
+- <strong>basic_input_dim</strong> (<cite>int</cite>) – The input dimension of Basic_Bert_Unit_model.
+- <strong>basic_output_dim</strong> (<cite>int</cite>) – The output dimension of Basic_Bert_Unit_model.
+- <strong>mlp_input_dim</strong> (<cite>int</cite>) – The input dimension of MLP.
+- <strong>mlp_hidden_dim</strong> (<cite>int</cite>) – The output dimension of MLP.
+- <strong>dropout</strong> (<cite>float</cite>) – The probability of nn.Dropout function.
+- <strong>margin</strong> (<cite>int</cite>) – A parameter in MarginRankingLoss.</p>
+<p>Others
+- <strong>plm_path</strong> (<cite>str</cite>) – The local pretrained language model path.
+- <strong>tokenizer</strong> (<cite>transformers.Tokenizer</cite>) – User defined plm tokenizer.
+- <strong>encodermodel</strong> (<cite>transformers.PretrainedModel</cite>) – User defined plm model.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.bertint.BertInt.calculate_loss">
+<span class="sig-name descname"><span class="pre">calculate_loss</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pos_score</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">neg_score</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.bertint.BertInt.calculate_loss" title="Permalink to this definition"></a></dt>
+<dd><p>Calculate the loss of the batch.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pos_score</strong> (<cite>torch.tensor</cite>) – </p></li>
+<li><p><strong>neg_score</strong> (<cite>torch.tensor</cite>) – </p></li>
+<li><p><strong>label</strong> (<cite>torch.label</cite>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>loss</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>torch.tensor</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.bertint.BertInt.chuliyixia">
+<span class="sig-name descname"><span class="pre">chuliyixia</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">train</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.bertint.BertInt.chuliyixia" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.bertint.BertInt.class_name_str">
+<span class="sig-name descname"><span class="pre">class_name_str</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.bertint.BertInt.class_name_str" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.bertint.BertInt.encode">
+<span class="sig-name descname"><span class="pre">encode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">batch</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.bertint.BertInt.encode" title="Permalink to this definition"></a></dt>
+<dd><p>Convert a batch of entity token ids to a batch of entity vector embedding.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>des</strong> (a <cite>dict</cite> of <cite>torch.tensor</cite>) – Keys: input_ids and attention_mask.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The entity embedding.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><cite>torch.tensor</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.bertint.BertInt.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">batch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">device(type='cuda')</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.bertint.BertInt.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Convert a batch of four kinds of entity token ids to a batch of postive/negtive score.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>des</strong> (a <cite>dict</cite> of <cite>torch.tensor</cite>) – Keys: pos1, pos2, neg1, neg2.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>postive/negtive score.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><cite>tuple of torch.tensor</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.bertint.BertInt.from_pretrained">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">from_pretrained</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model_path</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.bertint.BertInt.from_pretrained" title="Permalink to this definition"></a></dt>
+<dd><p>TODO: Understand how to utilize transformers.PretrainedModel to implement downloading online model.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.bertint.BertInt.load_source_target">
+<span class="sig-name descname"><span class="pre">load_source_target</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataset_src</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataset_tgt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stage</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mid_file_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'middle_file/'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.bertint.BertInt.load_source_target" title="Permalink to this definition"></a></dt>
+<dd><p>Prepare source and target data.
+:param dataset_src: Source dataset.
+:type dataset_src: <cite>datasets.arrow_dataset.Dataset</cite>
+:param dataset_tgt: Target dataset.
+:type dataset_tgt: <cite>datasets.arrow_dataset.Dataset</cite>
+:param stage: BertInt has two training stages. A integer indicating which stage the training process in.
+:type stage: <cite>int</cite>, <em>optional</em>, defaults to 1
+:param mid_file_path: The director where middle processed files stored.
+:type mid_file_path: <cite>str</cite>, <em>optional</em>, defaults to <cite>“middle_file/”</cite></p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.bertint.BertInt.matcher">
+<span class="sig-name descname"><span class="pre">matcher</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">feature</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.bertint.BertInt.matcher" title="Permalink to this definition"></a></dt>
+<dd><p>TODO: Applied in stage 2.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.bertint.BertInt.negtive_sample">
+<span class="sig-name descname"><span class="pre">negtive_sample</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">block_loaders</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">device(type='cuda')</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">24</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.bertint.BertInt.negtive_sample" title="Permalink to this definition"></a></dt>
+<dd><p>Negtive sampling.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>block_loaders</strong> (<cite>tuple of torch.utils.data.Dataloader</cite>) – four loaders described in prepare_dataloader.</p></li>
+<li><p><strong>device</strong> (<cite>torch.device</cite>, <em>optional</em>, defaults to <cite>“cuda”</cite>) – cuda or cpu.</p></li>
+<li><p><strong>batch_size</strong> (<cite>int</cite>, <em>optional</em>, defaults to 24) – batch_size for the following pairwise training.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>dataloader for the following pairwise training.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><cite>torch.utils.data.Dataloader</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.bertint.BertInt.prepare_dataloader">
+<span class="sig-name descname"><span class="pre">prepare_dataloader</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataset</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">split</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'train'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stage</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">128</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.bertint.BertInt.prepare_dataloader" title="Permalink to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>For split <cite>train</cite>, prepare the dataloaders for negtive sampling.</dt><dd><p>For split <cite>valid</cite> and <cite>test</cite>, prepare the dataloaders only for evaluation.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dataset</strong> (<cite>datasets.arrow_dataset.Dataset</cite>) – Train/valid/test pairs.</p></li>
+<li><p><strong>split</strong> (<cite>str</cite>, <em>optional</em>, defaults to <cite>“train”</cite>) – A string indicating which split the dataset is.</p></li>
+<li><p><strong>stage</strong> (<cite>int</cite>, <em>optional</em>, defaults to 1) – BertInt has two training stages. A integer indicating which stage the training process in.</p></li>
+<li><p><strong>batch_size</strong> (<cite>int</cite>, <em>optional</em>, defaults to 128) – Batch_size for the following negtive sampling.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>For split <cite>train</cite>, return two train loaders and two all entities loaders.
+For split <cite>valid</cite> and <cite>test</cite>, return two valid/test loaders.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><cite>tuple of torch.utils.data.Dataloader</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.bertint.BertInt.run_step">
+<span class="sig-name descname"><span class="pre">run_step</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">batch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stage</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">device(type='cuda')</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.bertint.BertInt.run_step" title="Permalink to this definition"></a></dt>
+<dd><p>The whole process training one batch (step).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>batch</strong> (<cite>tuple of torch.tensor</cite>) – </p></li>
+<li><p><strong>stage</strong> (<cite>int</cite>, <em>optional</em>, defaults to 1) – </p></li>
+<li><p><strong>device</strong> (<cite>str</cite>, <em>optional</em>, defaults to <cite>“cuda”</cite>) – cuda or cpu.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>loss</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>torch.tensor</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.bertint.BertInt.serialize">
+<span class="sig-name descname"><span class="pre">serialize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">des</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.bertint.BertInt.serialize" title="Permalink to this definition"></a></dt>
+<dd><p>Convert entity descriptions to token ids which can be directly fed into PLMs.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>des</strong> (<cite>dict</cite>) – Key: entity name. Value: entity description.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Key: entity id. Value: entity token ids.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><cite>dict</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.bertint.BertInt.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#matchbench.model.entity_alignment.bertint.BertInt.training" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.bertint.MLP">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">matchbench.model.entity_alignment.bertint.</span></span><span class="sig-name descname"><span class="pre">MLP</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mlp_input_dim</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mlp_hidden_dim</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.bertint.MLP" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<p>The class for <cite>BertInt</cite> approach MLP unit.</p>
+<dl class="simple">
+<dt>Class attributes:</dt><dd><ul class="simple">
+<li><p><strong>mlp_input_dim</strong> (<cite>str</cite>) – The input dimension of MLP.</p></li>
+<li><p><strong>mlp_hidden_dim</strong> (<cite>int</cite>) – The output dimension of MLP.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.bertint.MLP.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">features</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.bertint.MLP.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.bertint.MLP.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#matchbench.model.entity_alignment.bertint.MLP.training" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.bertint.PairwiseDataset">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">matchbench.model.entity_alignment.bertint.</span></span><span class="sig-name descname"><span class="pre">PairwiseDataset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">train_tups</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ent2data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.bertint.PairwiseDataset" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Dataset</span></code></p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.bertint.clean_attribute_data">
+<span class="sig-prename descclassname"><span class="pre">matchbench.model.entity_alignment.bertint.</span></span><span class="sig-name descname"><span class="pre">clean_attribute_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataset_src</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataset_tgt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mid_file_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'middle_file/'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.bertint.clean_attribute_data" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.bertint.read_att_data">
+<span class="sig-prename descclassname"><span class="pre">matchbench.model.entity_alignment.bertint.</span></span><span class="sig-name descname"><span class="pre">read_att_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataset</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.bertint.read_att_data" title="Permalink to this definition"></a></dt>
+<dd><p>load attribute triples file.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.bertint.remove_one_to_N_att_data_by_threshold">
+<span class="sig-prename descclassname"><span class="pre">matchbench.model.entity_alignment.bertint.</span></span><span class="sig-name descname"><span class="pre">remove_one_to_N_att_data_by_threshold</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ori_keep_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ori_remove_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">one2N_threshold</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.bertint.remove_one_to_N_att_data_by_threshold" title="Permalink to this definition"></a></dt>
+<dd><p>Filter noise attribute triples based on threshold</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.bertint.sort_a">
+<span class="sig-prename descclassname"><span class="pre">matchbench.model.entity_alignment.bertint.</span></span><span class="sig-name descname"><span class="pre">sort_a</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.bertint.sort_a" title="Permalink to this definition"></a></dt>
+<dd><p>sort</p>
+</dd></dl>
+
+</section>
+<section id="module-matchbench.model.entity_alignment.kecg">
+<span id="matchbench-model-entity-alignment-kecg-module"></span><h2>matchbench.model.entity_alignment.kecg module<a class="headerlink" href="#module-matchbench.model.entity_alignment.kecg" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.kecg.GAT">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">matchbench.model.entity_alignment.kecg.</span></span><span class="sig-name descname"><span class="pre">GAT</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n_units</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_heads</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dropout</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attn_dropout</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_normalization</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">diag</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.kecg.GAT" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.kecg.GAT.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">adj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.kecg.GAT.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.kecg.GAT.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#matchbench.model.entity_alignment.kecg.GAT.training" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.kecg.MultiHeadGraphAttention">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">matchbench.model.entity_alignment.kecg.</span></span><span class="sig-name descname"><span class="pre">MultiHeadGraphAttention</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n_head</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">f_in</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">f_out</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attn_dropout</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">diag</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">init</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bias</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.kecg.MultiHeadGraphAttention" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.kecg.MultiHeadGraphAttention.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">adj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.kecg.MultiHeadGraphAttention.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.kecg.MultiHeadGraphAttention.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#matchbench.model.entity_alignment.kecg.MultiHeadGraphAttention.training" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.kecg.SpecialSpmm">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">matchbench.model.entity_alignment.kecg.</span></span><span class="sig-name descname"><span class="pre">SpecialSpmm</span></span><a class="headerlink" href="#matchbench.model.entity_alignment.kecg.SpecialSpmm" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.kecg.SpecialSpmm.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">indices</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">values</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shape</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.kecg.SpecialSpmm.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.kecg.SpecialSpmm.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#matchbench.model.entity_alignment.kecg.SpecialSpmm.training" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.kecg.SpecialSpmmFunction">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">matchbench.model.entity_alignment.kecg.</span></span><span class="sig-name descname"><span class="pre">SpecialSpmmFunction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.kecg.SpecialSpmmFunction" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Function</span></code></p>
+<p>Special function for only sparse region backpropataion layer.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.kecg.SpecialSpmmFunction.backward">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">backward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ctx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">grad_output</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.kecg.SpecialSpmmFunction.backward" title="Permalink to this definition"></a></dt>
+<dd><p>Defines a formula for differentiating the operation with backward mode
+automatic differentiation (alias to the vjp function).</p>
+<p>This function is to be overridden by all subclasses.</p>
+<p>It must accept a context <code class="xref py py-attr docutils literal notranslate"><span class="pre">ctx</span></code> as the first argument, followed by
+as many outputs as the <a class="reference internal" href="#matchbench.model.entity_alignment.kecg.SpecialSpmmFunction.forward" title="matchbench.model.entity_alignment.kecg.SpecialSpmmFunction.forward"><code class="xref py py-func docutils literal notranslate"><span class="pre">forward()</span></code></a> returned (None will be passed in
+for non tensor outputs of the forward function),
+and it should return as many tensors, as there were inputs to
+<a class="reference internal" href="#matchbench.model.entity_alignment.kecg.SpecialSpmmFunction.forward" title="matchbench.model.entity_alignment.kecg.SpecialSpmmFunction.forward"><code class="xref py py-func docutils literal notranslate"><span class="pre">forward()</span></code></a>. Each argument is the gradient w.r.t the given output,
+and each returned value should be the gradient w.r.t. the
+corresponding input. If an input is not a Tensor or is a Tensor not
+requiring grads, you can just pass None as a gradient for that input.</p>
+<p>The context can be used to retrieve tensors saved during the forward
+pass. It also has an attribute <code class="xref py py-attr docutils literal notranslate"><span class="pre">ctx.needs_input_grad</span></code> as a tuple
+of booleans representing whether each input needs gradient. E.g.,
+<a class="reference internal" href="#matchbench.model.entity_alignment.kecg.SpecialSpmmFunction.backward" title="matchbench.model.entity_alignment.kecg.SpecialSpmmFunction.backward"><code class="xref py py-func docutils literal notranslate"><span class="pre">backward()</span></code></a> will have <code class="docutils literal notranslate"><span class="pre">ctx.needs_input_grad[0]</span> <span class="pre">=</span> <span class="pre">True</span></code> if the
+first input to <a class="reference internal" href="#matchbench.model.entity_alignment.kecg.SpecialSpmmFunction.forward" title="matchbench.model.entity_alignment.kecg.SpecialSpmmFunction.forward"><code class="xref py py-func docutils literal notranslate"><span class="pre">forward()</span></code></a> needs gradient computated w.r.t. the
+output.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.kecg.SpecialSpmmFunction.forward">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ctx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">indices</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">values</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shape</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.kecg.SpecialSpmmFunction.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Performs the operation.</p>
+<p>This function is to be overridden by all subclasses.</p>
+<p>It must accept a context ctx as the first argument, followed by any
+number of arguments (tensors or other types).</p>
+<p>The context can be used to store arbitrary data that can be then
+retrieved during the backward pass. Tensors should not be stored
+directly on <cite>ctx</cite> (though this is not currently enforced for
+backward compatibility). Instead, tensors should be saved either with
+<code class="xref py py-func docutils literal notranslate"><span class="pre">ctx.save_for_backward()</span></code> if they are intended to be used in
+<code class="docutils literal notranslate"><span class="pre">backward</span></code> (equivalently, <code class="docutils literal notranslate"><span class="pre">vjp</span></code>) or <code class="xref py py-func docutils literal notranslate"><span class="pre">ctx.save_for_forward()</span></code>
+if they are intended to be used for in <code class="docutils literal notranslate"><span class="pre">jvp</span></code>.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-matchbench.model.entity_alignment.rrea">
+<span id="matchbench-model-entity-alignment-rrea-module"></span><h2>matchbench.model.entity_alignment.rrea module<a class="headerlink" href="#module-matchbench.model.entity_alignment.rrea" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.rrea.NR_GraphAttention">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">matchbench.model.entity_alignment.rrea.</span></span><span class="sig-name descname"><span class="pre">NR_GraphAttention</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rel_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">triple_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_dim</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">depth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attn_heads</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attn_heads_reduction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'concat'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_bias</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">activation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'relu'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.rrea.NR_GraphAttention" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.rrea.NR_GraphAttention.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">inputs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.rrea.NR_GraphAttention.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.rrea.NR_GraphAttention.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#matchbench.model.entity_alignment.rrea.NR_GraphAttention.training" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.rrea.RREA">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">matchbench.model.entity_alignment.rrea.</span></span><span class="sig-name descname"><span class="pre">RREA</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">triple_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">353543</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">39654</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_node_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">39654</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rel_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4224</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alpha</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">beta</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">depth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_hidden</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rel_hidden</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dropout_rate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nearest_sample_num</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">128</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ind_dropout_rate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gamma</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">device(type='cuda',</span> <span class="pre">index=0)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.rrea.RREA" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="matchbench.model.html#matchbench.model.base_model.EAModel" title="matchbench.model.base_model.EAModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">EAModel</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.rrea.RREA.encode">
+<span class="sig-name descname"><span class="pre">encode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">batch</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.rrea.RREA.encode" title="Permalink to this definition"></a></dt>
+<dd><p>for PLMs, serialization -&gt; CLS embedding (trainable)
+for pretrained word embedding, pair -&gt; embedding (untrainable)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.rrea.RREA.get_emb">
+<span class="sig-name descname"><span class="pre">get_emb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">loader</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">device(type='cuda')</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.rrea.RREA.get_emb" title="Permalink to this definition"></a></dt>
+<dd><p>Convert a list of entities token ids to a list of embedding after encoder.
+:param loader:
+:type loader: <cite>torch.data.utils.DataLoader</cite>
+:param device: cuda or cpu.
+:type device: <cite>torch.device</cite>, <em>optional</em>, defaults to <cite>“cuda”</cite></p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the output embeddings of the encoder.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>torch.tensor</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.rrea.RREA.load_source_target">
+<span class="sig-name descname"><span class="pre">load_source_target</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataset_src</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataset_tgt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stage</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.rrea.RREA.load_source_target" title="Permalink to this definition"></a></dt>
+<dd><p>Prepare source and target data.
+:param dataset_src: Source dataset.
+:type dataset_src: <cite>datasets.arrow_dataset.Dataset</cite>
+:param dataset_tgt: Target dataset.
+:type dataset_tgt: <cite>datasets.arrow_dataset.Dataset</cite></p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.rrea.RREA.negtive_sample">
+<span class="sig-name descname"><span class="pre">negtive_sample</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">train_pair</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.rrea.RREA.negtive_sample" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.rrea.RREA.predict">
+<span class="sig-name descname"><span class="pre">predict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataloader</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">device(type='cuda')</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.rrea.RREA.predict" title="Permalink to this definition"></a></dt>
+<dd><p>Predict the closest entities of each entity in test set.
+:param dataloader:
+:type dataloader: <cite>torch.data.utils.DataLoader</cite></p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>top indexes.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><cite>torch.tensor</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.rrea.RREA.prepare_dataloader">
+<span class="sig-name descname"><span class="pre">prepare_dataloader</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataset</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">split</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'train'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.rrea.RREA.prepare_dataloader" title="Permalink to this definition"></a></dt>
+<dd><p>for PLMs, serialize
+for PWEs, encode</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.rrea.RREA.run_step">
+<span class="sig-name descname"><span class="pre">run_step</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">train_pairs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.rrea.RREA.run_step" title="Permalink to this definition"></a></dt>
+<dd><p>Args: batch data
+Returns: loss</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.rrea.RREA.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#matchbench.model.entity_alignment.rrea.RREA.training" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-matchbench.model.entity_alignment">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-matchbench.model.entity_alignment" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.BertInt">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">matchbench.model.entity_alignment.</span></span><span class="sig-name descname"><span class="pre">BertInt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">if_neg_sample</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_seq_length</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">128</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nearest_sample_num</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">128</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">basic_input_dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">768</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">basic_output_dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">300</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mlp_input_dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">85</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mlp_hidden_dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">11</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dropout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">margin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plm_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tokenizer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">encodermodel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.BertInt" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="matchbench.model.html#matchbench.model.base_model.EAModel" title="matchbench.model.base_model.EAModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">EAModel</span></code></a></p>
+<p>The class for <cite>BertInt</cite> approach.</p>
+<dl>
+<dt>Class attributes:</dt><dd><p>Data/Feature generation
+- <strong>if_neg_sample</strong> (<cite>bool</cite>) – If the approach need negtive sampling or not.
+- <strong>max_seq_length</strong> (<cite>int</cite>) – The max length of tokens fed into PLMs.
+- <strong>get_emb_batch</strong> (<cite>int</cite>) – The batch size when getting the PLM embedding of all the entities.
+- <strong>nearest_sample_num</strong> (<cite>int</cite>) – The generated candidates number when negtive sampling.
+- <strong>train_batch_size</strong></p>
+<p>Model architecture / Loss
+- <strong>basic_input_dim</strong> (<cite>int</cite>) – The input dimension of Basic_Bert_Unit_model.
+- <strong>basic_output_dim</strong> (<cite>int</cite>) – The output dimension of Basic_Bert_Unit_model.
+- <strong>mlp_input_dim</strong> (<cite>int</cite>) – The input dimension of MLP.
+- <strong>mlp_hidden_dim</strong> (<cite>int</cite>) – The output dimension of MLP.
+- <strong>dropout</strong> (<cite>float</cite>) – The probability of nn.Dropout function.
+- <strong>margin</strong> (<cite>int</cite>) – A parameter in MarginRankingLoss.</p>
+<p>Others
+- <strong>plm_path</strong> (<cite>str</cite>) – The local pretrained language model path.
+- <strong>tokenizer</strong> (<cite>transformers.Tokenizer</cite>) – User defined plm tokenizer.
+- <strong>encodermodel</strong> (<cite>transformers.PretrainedModel</cite>) – User defined plm model.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.BertInt.calculate_loss">
+<span class="sig-name descname"><span class="pre">calculate_loss</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pos_score</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">neg_score</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.BertInt.calculate_loss" title="Permalink to this definition"></a></dt>
+<dd><p>Calculate the loss of the batch.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pos_score</strong> (<cite>torch.tensor</cite>) – </p></li>
+<li><p><strong>neg_score</strong> (<cite>torch.tensor</cite>) – </p></li>
+<li><p><strong>label</strong> (<cite>torch.label</cite>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>loss</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>torch.tensor</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.BertInt.chuliyixia">
+<span class="sig-name descname"><span class="pre">chuliyixia</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">train</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.BertInt.chuliyixia" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.BertInt.class_name_str">
+<span class="sig-name descname"><span class="pre">class_name_str</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.BertInt.class_name_str" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.BertInt.encode">
+<span class="sig-name descname"><span class="pre">encode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">batch</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.BertInt.encode" title="Permalink to this definition"></a></dt>
+<dd><p>Convert a batch of entity token ids to a batch of entity vector embedding.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>des</strong> (a <cite>dict</cite> of <cite>torch.tensor</cite>) – Keys: input_ids and attention_mask.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The entity embedding.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><cite>torch.tensor</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.BertInt.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">batch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">device(type='cuda')</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.BertInt.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Convert a batch of four kinds of entity token ids to a batch of postive/negtive score.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>des</strong> (a <cite>dict</cite> of <cite>torch.tensor</cite>) – Keys: pos1, pos2, neg1, neg2.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>postive/negtive score.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><cite>tuple of torch.tensor</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.BertInt.from_pretrained">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">from_pretrained</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model_path</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.BertInt.from_pretrained" title="Permalink to this definition"></a></dt>
+<dd><p>TODO: Understand how to utilize transformers.PretrainedModel to implement downloading online model.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.BertInt.load_source_target">
+<span class="sig-name descname"><span class="pre">load_source_target</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataset_src</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataset_tgt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stage</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mid_file_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'middle_file/'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.BertInt.load_source_target" title="Permalink to this definition"></a></dt>
+<dd><p>Prepare source and target data.
+:param dataset_src: Source dataset.
+:type dataset_src: <cite>datasets.arrow_dataset.Dataset</cite>
+:param dataset_tgt: Target dataset.
+:type dataset_tgt: <cite>datasets.arrow_dataset.Dataset</cite>
+:param stage: BertInt has two training stages. A integer indicating which stage the training process in.
+:type stage: <cite>int</cite>, <em>optional</em>, defaults to 1
+:param mid_file_path: The director where middle processed files stored.
+:type mid_file_path: <cite>str</cite>, <em>optional</em>, defaults to <cite>“middle_file/”</cite></p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.BertInt.matcher">
+<span class="sig-name descname"><span class="pre">matcher</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">feature</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.BertInt.matcher" title="Permalink to this definition"></a></dt>
+<dd><p>TODO: Applied in stage 2.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.BertInt.negtive_sample">
+<span class="sig-name descname"><span class="pre">negtive_sample</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">block_loaders</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">device(type='cuda')</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">24</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.BertInt.negtive_sample" title="Permalink to this definition"></a></dt>
+<dd><p>Negtive sampling.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>block_loaders</strong> (<cite>tuple of torch.utils.data.Dataloader</cite>) – four loaders described in prepare_dataloader.</p></li>
+<li><p><strong>device</strong> (<cite>torch.device</cite>, <em>optional</em>, defaults to <cite>“cuda”</cite>) – cuda or cpu.</p></li>
+<li><p><strong>batch_size</strong> (<cite>int</cite>, <em>optional</em>, defaults to 24) – batch_size for the following pairwise training.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>dataloader for the following pairwise training.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><cite>torch.utils.data.Dataloader</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.BertInt.prepare_dataloader">
+<span class="sig-name descname"><span class="pre">prepare_dataloader</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataset</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">split</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'train'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stage</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">128</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.BertInt.prepare_dataloader" title="Permalink to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>For split <cite>train</cite>, prepare the dataloaders for negtive sampling.</dt><dd><p>For split <cite>valid</cite> and <cite>test</cite>, prepare the dataloaders only for evaluation.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dataset</strong> (<cite>datasets.arrow_dataset.Dataset</cite>) – Train/valid/test pairs.</p></li>
+<li><p><strong>split</strong> (<cite>str</cite>, <em>optional</em>, defaults to <cite>“train”</cite>) – A string indicating which split the dataset is.</p></li>
+<li><p><strong>stage</strong> (<cite>int</cite>, <em>optional</em>, defaults to 1) – BertInt has two training stages. A integer indicating which stage the training process in.</p></li>
+<li><p><strong>batch_size</strong> (<cite>int</cite>, <em>optional</em>, defaults to 128) – Batch_size for the following negtive sampling.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>For split <cite>train</cite>, return two train loaders and two all entities loaders.
+For split <cite>valid</cite> and <cite>test</cite>, return two valid/test loaders.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><cite>tuple of torch.utils.data.Dataloader</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.BertInt.run_step">
+<span class="sig-name descname"><span class="pre">run_step</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">batch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stage</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">device(type='cuda')</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.BertInt.run_step" title="Permalink to this definition"></a></dt>
+<dd><p>The whole process training one batch (step).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>batch</strong> (<cite>tuple of torch.tensor</cite>) – </p></li>
+<li><p><strong>stage</strong> (<cite>int</cite>, <em>optional</em>, defaults to 1) – </p></li>
+<li><p><strong>device</strong> (<cite>str</cite>, <em>optional</em>, defaults to <cite>“cuda”</cite>) – cuda or cpu.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>loss</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>torch.tensor</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.BertInt.serialize">
+<span class="sig-name descname"><span class="pre">serialize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">des</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.entity_alignment.BertInt.serialize" title="Permalink to this definition"></a></dt>
+<dd><p>Convert entity descriptions to token ids which can be directly fed into PLMs.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>des</strong> (<cite>dict</cite>) – Key: entity name. Value: entity description.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Key: entity id. Value: entity token ids.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><cite>dict</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.model.entity_alignment.BertInt.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#matchbench.model.entity_alignment.BertInt.training" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, matchbench groups.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
