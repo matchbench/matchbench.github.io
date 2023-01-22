@@ -10,7 +10,14 @@ Welcome to matchbench's documentation!
    :maxdepth: 2
    :caption: Contents:
    
+   md_file/Introduction.md
+
+   md_file/GettingStarted.md
+
+   md_file/UserGuides.md
+   
    md_file/DeveloperGuides.md
+   
    codes_doc/source/modules.rst
 
 
