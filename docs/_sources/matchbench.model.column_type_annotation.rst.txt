@@ -1,0 +1,37 @@
+matchbench.model.column\_type\_annotation package
+=================================================
+
+Submodules
+----------
+
+matchbench.model.column\_type\_annotation.doduo module
+------------------------------------------------------
+
+.. automodule:: matchbench.model.column_type_annotation.doduo
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+matchbench.model.column\_type\_annotation.sato module
+-----------------------------------------------------
+
+.. automodule:: matchbench.model.column_type_annotation.sato
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+matchbench.model.column\_type\_annotation.sherlock module
+---------------------------------------------------------
+
+.. automodule:: matchbench.model.column_type_annotation.sherlock
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: matchbench.model.column_type_annotation
+   :members:
+   :undoc-members:
+   :show-inheritance:

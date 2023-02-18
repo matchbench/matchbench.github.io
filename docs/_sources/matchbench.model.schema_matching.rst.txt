@@ -1,0 +1,21 @@
+matchbench.model.schema\_matching package
+=========================================
+
+Submodules
+----------
+
+matchbench.model.schema\_matching.embdi module
+----------------------------------------------
+
+.. automodule:: matchbench.model.schema_matching.embdi
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: matchbench.model.schema_matching
+   :members:
+   :undoc-members:
+   :show-inheritance:

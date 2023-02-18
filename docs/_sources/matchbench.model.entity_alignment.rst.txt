@@ -1,0 +1,77 @@
+matchbench.model.entity\_alignment package
+==========================================
+
+Submodules
+----------
+
+matchbench.model.entity\_alignment.Dual\_AMN module
+---------------------------------------------------
+
+.. automodule:: matchbench.model.entity_alignment.Dual_AMN
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+matchbench.model.entity\_alignment.LargeEA module
+-------------------------------------------------
+
+.. automodule:: matchbench.model.entity_alignment.LargeEA
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+matchbench.model.entity\_alignment.bertint module
+-------------------------------------------------
+
+.. automodule:: matchbench.model.entity_alignment.bertint
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+matchbench.model.entity\_alignment.kecg module
+----------------------------------------------
+
+.. automodule:: matchbench.model.entity_alignment.kecg
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+matchbench.model.entity\_alignment.lightea module
+-------------------------------------------------
+
+.. automodule:: matchbench.model.entity_alignment.lightea
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+matchbench.model.entity\_alignment.rrea module
+----------------------------------------------
+
+.. automodule:: matchbench.model.entity_alignment.rrea
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+matchbench.model.entity\_alignment.sdea module
+----------------------------------------------
+
+.. automodule:: matchbench.model.entity_alignment.sdea
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+matchbench.model.entity\_alignment.seu module
+---------------------------------------------
+
+.. automodule:: matchbench.model.entity_alignment.seu
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: matchbench.model.entity_alignment
+   :members:
+   :undoc-members:
+   :show-inheritance:
