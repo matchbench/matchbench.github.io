@@ -1,0 +1,16 @@
+# Introduction
+
+**MatchBench** is a data integration ecosystem of libraries, which includes three main modules: Dataset interface, Integration algorithm, and Training/Evaluating module.
+
+The library includes 20 data integration algorithms, covering four major categories:([Details](https://github.com/ruc-datalab/MatchBench#model)).
+
+Entity Resolution(ER)
+Entity Alignment(EA)
+Column Type Annotation(CTA)
+Schema Matching(SM)
+
+We provide the support of 52 benchmark data integration datasets, 23 benchmarks for ER task, 20 benchmarks for EA task, 5 benchmarks for CTA task and 4 benchmarks for SM task ([Details](https://github.com/ruc-datalab/MatchBench#datasets)).
+
+You can view MatchBench's source code at [MatchBench Repository](https://github.com/ruc-datalab/MatchBench).
+
+<u>[Back To HomePage](../../html/index.html)</u>
