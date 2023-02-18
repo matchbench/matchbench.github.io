@@ -1,0 +1,1114 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>matchbench.model package &mdash; MatchBench  documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="MatchBench  documentation" href="index.html"/>
+        <link rel="up" title="matchbench package" href="matchbench.html"/>
+        <link rel="next" title="matchbench.model.column_type_annotation package" href="matchbench.model.column_type_annotation.html"/>
+        <link rel="prev" title="matchbench.evaluator package" href="matchbench.evaluator.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> MatchBench
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="md_file/Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="md_file/GettingStarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="md_file/UserGuides.html">User Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="md_file/DeveloperGuides.html">Developer Guides</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">matchbench</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="matchbench.html">matchbench package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="matchbench.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="matchbench.dataset.html">matchbench.dataset package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.evaluator.html">matchbench.evaluator package</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">matchbench.model package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.pair_gen.html">matchbench.pair_gen package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.trainer.html">matchbench.trainer package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.utils.html">matchbench.utils package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.html#module-matchbench">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">MatchBench</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">matchbench</a> &raquo;</li>
+        
+          <li><a href="matchbench.html">matchbench package</a> &raquo;</li>
+        
+      <li>matchbench.model package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/matchbench.model.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <section id="matchbench-model-package">
+<h1>matchbench.model package<a class="headerlink" href="#matchbench-model-package" title="Permalink to this heading">¶</a></h1>
+<section id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this heading">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="matchbench.model.column_type_annotation.html">matchbench.model.column_type_annotation package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="matchbench.model.column_type_annotation.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="matchbench.model.column_type_annotation.html#module-matchbench.model.column_type_annotation.doduo">matchbench.model.column_type_annotation.doduo module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.column_type_annotation.html#matchbench.model.column_type_annotation.doduo.Doduo"><code class="docutils literal notranslate"><span class="pre">Doduo</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.column_type_annotation.html#matchbench.model.column_type_annotation.doduo.Doduo.forward"><code class="docutils literal notranslate"><span class="pre">Doduo.forward()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.column_type_annotation.html#matchbench.model.column_type_annotation.doduo.Doduo.label_mapping"><code class="docutils literal notranslate"><span class="pre">Doduo.label_mapping</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.column_type_annotation.html#matchbench.model.column_type_annotation.doduo.Doduo.predict"><code class="docutils literal notranslate"><span class="pre">Doduo.predict()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.column_type_annotation.html#matchbench.model.column_type_annotation.doduo.Doduo.prepare_dataloader"><code class="docutils literal notranslate"><span class="pre">Doduo.prepare_dataloader()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.column_type_annotation.html#matchbench.model.column_type_annotation.doduo.Doduo.run_step"><code class="docutils literal notranslate"><span class="pre">Doduo.run_step()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.column_type_annotation.html#matchbench.model.column_type_annotation.doduo.Doduo.tokenize"><code class="docutils literal notranslate"><span class="pre">Doduo.tokenize()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.column_type_annotation.html#matchbench.model.column_type_annotation.doduo.Doduo.training"><code class="docutils literal notranslate"><span class="pre">Doduo.training</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="matchbench.model.column_type_annotation.html#module-matchbench.model.column_type_annotation.sato">matchbench.model.column_type_annotation.sato module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.column_type_annotation.html#matchbench.model.column_type_annotation.sato.CRF"><code class="docutils literal notranslate"><span class="pre">CRF</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.column_type_annotation.html#matchbench.model.column_type_annotation.sato.CRF.decode"><code class="docutils literal notranslate"><span class="pre">CRF.decode()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.column_type_annotation.html#matchbench.model.column_type_annotation.sato.CRF.forward"><code class="docutils literal notranslate"><span class="pre">CRF.forward()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.column_type_annotation.html#matchbench.model.column_type_annotation.sato.CRF.init_transition"><code class="docutils literal notranslate"><span class="pre">CRF.init_transition()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.column_type_annotation.html#matchbench.model.column_type_annotation.sato.CRF.reset_parameters"><code class="docutils literal notranslate"><span class="pre">CRF.reset_parameters()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.column_type_annotation.html#matchbench.model.column_type_annotation.sato.CRF.training"><code class="docutils literal notranslate"><span class="pre">CRF.training</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.column_type_annotation.html#matchbench.model.column_type_annotation.sato.Sato"><code class="docutils literal notranslate"><span class="pre">Sato</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.column_type_annotation.html#matchbench.model.column_type_annotation.sato.Sato.label_mapping"><code class="docutils literal notranslate"><span class="pre">Sato.label_mapping</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.column_type_annotation.html#matchbench.model.column_type_annotation.sato.Sato.parameters"><code class="docutils literal notranslate"><span class="pre">Sato.parameters()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.column_type_annotation.html#matchbench.model.column_type_annotation.sato.Sato.predict"><code class="docutils literal notranslate"><span class="pre">Sato.predict()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.column_type_annotation.html#matchbench.model.column_type_annotation.sato.Sato.prepare_dataloader"><code class="docutils literal notranslate"><span class="pre">Sato.prepare_dataloader()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.column_type_annotation.html#matchbench.model.column_type_annotation.sato.Sato.run_step"><code class="docutils literal notranslate"><span class="pre">Sato.run_step()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.column_type_annotation.html#matchbench.model.column_type_annotation.sato.Sato.training"><code class="docutils literal notranslate"><span class="pre">Sato.training</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="matchbench.model.column_type_annotation.html#module-matchbench.model.column_type_annotation.sherlock">matchbench.model.column_type_annotation.sherlock module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.column_type_annotation.html#matchbench.model.column_type_annotation.sherlock.Sherlock"><code class="docutils literal notranslate"><span class="pre">Sherlock</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.column_type_annotation.html#matchbench.model.column_type_annotation.sherlock.Sherlock.forward"><code class="docutils literal notranslate"><span class="pre">Sherlock.forward()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.column_type_annotation.html#matchbench.model.column_type_annotation.sherlock.Sherlock.label_mapping"><code class="docutils literal notranslate"><span class="pre">Sherlock.label_mapping</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.column_type_annotation.html#matchbench.model.column_type_annotation.sherlock.Sherlock.predict"><code class="docutils literal notranslate"><span class="pre">Sherlock.predict()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.column_type_annotation.html#matchbench.model.column_type_annotation.sherlock.Sherlock.prepare_dataloader"><code class="docutils literal notranslate"><span class="pre">Sherlock.prepare_dataloader()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.column_type_annotation.html#matchbench.model.column_type_annotation.sherlock.Sherlock.run_step"><code class="docutils literal notranslate"><span class="pre">Sherlock.run_step()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.column_type_annotation.html#matchbench.model.column_type_annotation.sherlock.Sherlock.serialize"><code class="docutils literal notranslate"><span class="pre">Sherlock.serialize()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.column_type_annotation.html#matchbench.model.column_type_annotation.sherlock.Sherlock.training"><code class="docutils literal notranslate"><span class="pre">Sherlock.training</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="matchbench.model.column_type_annotation.html#module-matchbench.model.column_type_annotation">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="matchbench.model.entity_alignment.html">matchbench.model.entity_alignment package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="matchbench.model.entity_alignment.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="matchbench.model.entity_alignment.html#module-matchbench.model.entity_alignment.Dual_AMN">matchbench.model.entity_alignment.Dual_AMN module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.Dual_AMN.Dual_AMN"><code class="docutils literal notranslate"><span class="pre">Dual_AMN</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.Dual_AMN.Dual_AMN.encode"><code class="docutils literal notranslate"><span class="pre">Dual_AMN.encode()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.Dual_AMN.Dual_AMN.get_emb"><code class="docutils literal notranslate"><span class="pre">Dual_AMN.get_emb()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.Dual_AMN.Dual_AMN.load_source_target"><code class="docutils literal notranslate"><span class="pre">Dual_AMN.load_source_target()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.Dual_AMN.Dual_AMN.predict"><code class="docutils literal notranslate"><span class="pre">Dual_AMN.predict()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.Dual_AMN.Dual_AMN.prepare_dataloader"><code class="docutils literal notranslate"><span class="pre">Dual_AMN.prepare_dataloader()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.Dual_AMN.Dual_AMN.run_step"><code class="docutils literal notranslate"><span class="pre">Dual_AMN.run_step()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.Dual_AMN.Dual_AMN.training"><code class="docutils literal notranslate"><span class="pre">Dual_AMN.training</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.Dual_AMN.NR_GraphAttention"><code class="docutils literal notranslate"><span class="pre">NR_GraphAttention</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.Dual_AMN.NR_GraphAttention.forward"><code class="docutils literal notranslate"><span class="pre">NR_GraphAttention.forward()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.Dual_AMN.NR_GraphAttention.training"><code class="docutils literal notranslate"><span class="pre">NR_GraphAttention.training</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench-model-entity-alignment-largeea-module">matchbench.model.entity_alignment.LargeEA module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="matchbench.model.entity_alignment.html#module-matchbench.model.entity_alignment.bertint">matchbench.model.entity_alignment.bertint module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.bertint.Basic_Bert_Unit_model"><code class="docutils literal notranslate"><span class="pre">Basic_Bert_Unit_model</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.bertint.Basic_Bert_Unit_model.forward"><code class="docutils literal notranslate"><span class="pre">Basic_Bert_Unit_model.forward()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.bertint.Basic_Bert_Unit_model.training"><code class="docutils literal notranslate"><span class="pre">Basic_Bert_Unit_model.training</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.bertint.BertInt"><code class="docutils literal notranslate"><span class="pre">BertInt</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.bertint.BertInt.calculate_loss"><code class="docutils literal notranslate"><span class="pre">BertInt.calculate_loss()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.bertint.BertInt.chuliyixia"><code class="docutils literal notranslate"><span class="pre">BertInt.chuliyixia()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.bertint.BertInt.compute_metric_stage_2"><code class="docutils literal notranslate"><span class="pre">BertInt.compute_metric_stage_2()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.bertint.BertInt.encode"><code class="docutils literal notranslate"><span class="pre">BertInt.encode()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.bertint.BertInt.forward"><code class="docutils literal notranslate"><span class="pre">BertInt.forward()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.bertint.BertInt.load_source_target"><code class="docutils literal notranslate"><span class="pre">BertInt.load_source_target()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.bertint.BertInt.matcher"><code class="docutils literal notranslate"><span class="pre">BertInt.matcher()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.bertint.BertInt.negative_sample"><code class="docutils literal notranslate"><span class="pre">BertInt.negative_sample()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.bertint.BertInt.predict_stage_2"><code class="docutils literal notranslate"><span class="pre">BertInt.predict_stage_2()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.bertint.BertInt.prepare_dataloader"><code class="docutils literal notranslate"><span class="pre">BertInt.prepare_dataloader()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.bertint.BertInt.run_step"><code class="docutils literal notranslate"><span class="pre">BertInt.run_step()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.bertint.BertInt.serialize"><code class="docutils literal notranslate"><span class="pre">BertInt.serialize()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.bertint.BertInt.training"><code class="docutils literal notranslate"><span class="pre">BertInt.training</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.bertint.MLP"><code class="docutils literal notranslate"><span class="pre">MLP</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.bertint.MLP.forward"><code class="docutils literal notranslate"><span class="pre">MLP.forward()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.bertint.MLP.training"><code class="docutils literal notranslate"><span class="pre">MLP.training</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.bertint.PairwiseDataset"><code class="docutils literal notranslate"><span class="pre">PairwiseDataset</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.bertint.RelationalDataloader"><code class="docutils literal notranslate"><span class="pre">RelationalDataloader</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.bertint.RelationalDataloader.train_pair_index_gene"><code class="docutils literal notranslate"><span class="pre">RelationalDataloader.train_pair_index_gene()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.bertint.all_entity_pairs_gene"><code class="docutils literal notranslate"><span class="pre">all_entity_pairs_gene()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.bertint.attributeValue_emb_gene"><code class="docutils literal notranslate"><span class="pre">attributeValue_emb_gene()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.bertint.attributeView_interaction_F_gene"><code class="docutils literal notranslate"><span class="pre">attributeView_interaction_F_gene()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.bertint.batch_dual_aggregation_feature_gene"><code class="docutils literal notranslate"><span class="pre">batch_dual_aggregation_feature_gene()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.bertint.candidate_generate"><code class="docutils literal notranslate"><span class="pre">candidate_generate()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.bertint.clean_attribute_data"><code class="docutils literal notranslate"><span class="pre">clean_attribute_data()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.bertint.desornameView_interaction_F_gene"><code class="docutils literal notranslate"><span class="pre">desornameView_interaction_F_gene()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.bertint.dump_other_data"><code class="docutils literal notranslate"><span class="pre">dump_other_data()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.bertint.ent2attributeValues_gene"><code class="docutils literal notranslate"><span class="pre">ent2attributeValues_gene()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.bertint.get_attributeValue_embedding"><code class="docutils literal notranslate"><span class="pre">get_attributeValue_embedding()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.bertint.get_attributeView_interaction_feature"><code class="docutils literal notranslate"><span class="pre">get_attributeView_interaction_feature()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.bertint.get_attribute_value_type"><code class="docutils literal notranslate"><span class="pre">get_attribute_value_type()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.bertint.get_entity_embedding"><code class="docutils literal notranslate"><span class="pre">get_entity_embedding()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.bertint.get_neighView_and_desView_interaction_feature"><code class="docutils literal notranslate"><span class="pre">get_neighView_and_desView_interaction_feature()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.bertint.get_tokens_of_value"><code class="docutils literal notranslate"><span class="pre">get_tokens_of_value()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.bertint.kernel_mus"><code class="docutils literal notranslate"><span class="pre">kernel_mus()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.bertint.kernel_sigmas"><code class="docutils literal notranslate"><span class="pre">kernel_sigmas()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.bertint.neigh_ent_dict_gene"><code class="docutils literal notranslate"><span class="pre">neigh_ent_dict_gene()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.bertint.neighborView_interaction_F_gene"><code class="docutils literal notranslate"><span class="pre">neighborView_interaction_F_gene()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.bertint.padding_to_longest"><code class="docutils literal notranslate"><span class="pre">padding_to_longest()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.bertint.read_att_data"><code class="docutils literal notranslate"><span class="pre">read_att_data()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.bertint.read_attribute_datas"><code class="docutils literal notranslate"><span class="pre">read_attribute_datas()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.bertint.remove_one_to_N_att_data_by_threshold"><code class="docutils literal notranslate"><span class="pre">remove_one_to_N_att_data_by_threshold()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.bertint.sort_a"><code class="docutils literal notranslate"><span class="pre">sort_a()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.bertint.test_read_emb"><code class="docutils literal notranslate"><span class="pre">test_read_emb()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="matchbench.model.entity_alignment.html#module-matchbench.model.entity_alignment.kecg">matchbench.model.entity_alignment.kecg module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.kecg.GAT"><code class="docutils literal notranslate"><span class="pre">GAT</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.kecg.GAT.forward"><code class="docutils literal notranslate"><span class="pre">GAT.forward()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.kecg.GAT.training"><code class="docutils literal notranslate"><span class="pre">GAT.training</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.kecg.MultiHeadGraphAttention"><code class="docutils literal notranslate"><span class="pre">MultiHeadGraphAttention</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.kecg.MultiHeadGraphAttention.forward"><code class="docutils literal notranslate"><span class="pre">MultiHeadGraphAttention.forward()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.kecg.MultiHeadGraphAttention.training"><code class="docutils literal notranslate"><span class="pre">MultiHeadGraphAttention.training</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.kecg.SpecialSpmm"><code class="docutils literal notranslate"><span class="pre">SpecialSpmm</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.kecg.SpecialSpmm.forward"><code class="docutils literal notranslate"><span class="pre">SpecialSpmm.forward()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.kecg.SpecialSpmm.training"><code class="docutils literal notranslate"><span class="pre">SpecialSpmm.training</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.kecg.SpecialSpmmFunction"><code class="docutils literal notranslate"><span class="pre">SpecialSpmmFunction</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.kecg.SpecialSpmmFunction.backward"><code class="docutils literal notranslate"><span class="pre">SpecialSpmmFunction.backward()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.kecg.SpecialSpmmFunction.forward"><code class="docutils literal notranslate"><span class="pre">SpecialSpmmFunction.forward()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="matchbench.model.entity_alignment.html#module-matchbench.model.entity_alignment.lightea">matchbench.model.entity_alignment.lightea module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.lightea.LightEA"><code class="docutils literal notranslate"><span class="pre">LightEA</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.lightea.LightEA.batch_sparse_matmul"><code class="docutils literal notranslate"><span class="pre">LightEA.batch_sparse_matmul()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.lightea.LightEA.compute_metric"><code class="docutils literal notranslate"><span class="pre">LightEA.compute_metric()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.lightea.LightEA.get_features"><code class="docutils literal notranslate"><span class="pre">LightEA.get_features()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.lightea.LightEA.load_source_target"><code class="docutils literal notranslate"><span class="pre">LightEA.load_source_target()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.lightea.LightEA.predict"><code class="docutils literal notranslate"><span class="pre">LightEA.predict()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.lightea.LightEA.prepare_dataloader"><code class="docutils literal notranslate"><span class="pre">LightEA.prepare_dataloader()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.lightea.LightEA.random_projection"><code class="docutils literal notranslate"><span class="pre">LightEA.random_projection()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.lightea.LightEA.segment_sum"><code class="docutils literal notranslate"><span class="pre">LightEA.segment_sum()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.lightea.LightEA.sparse_sinkhorn_sims"><code class="docutils literal notranslate"><span class="pre">LightEA.sparse_sinkhorn_sims()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.lightea.LightEA.test"><code class="docutils literal notranslate"><span class="pre">LightEA.test()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.lightea.LightEA.training"><code class="docutils literal notranslate"><span class="pre">LightEA.training</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.lightea.load_aligned_pair"><code class="docutils literal notranslate"><span class="pre">load_aligned_pair()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.lightea.load_graph"><code class="docutils literal notranslate"><span class="pre">load_graph()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.lightea.load_name_features"><code class="docutils literal notranslate"><span class="pre">load_name_features()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="matchbench.model.entity_alignment.html#module-matchbench.model.entity_alignment.rrea">matchbench.model.entity_alignment.rrea module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.rrea.NR_GraphAttention"><code class="docutils literal notranslate"><span class="pre">NR_GraphAttention</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.rrea.NR_GraphAttention.forward"><code class="docutils literal notranslate"><span class="pre">NR_GraphAttention.forward()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.rrea.NR_GraphAttention.training"><code class="docutils literal notranslate"><span class="pre">NR_GraphAttention.training</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.rrea.RREA"><code class="docutils literal notranslate"><span class="pre">RREA</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.rrea.RREA.encode"><code class="docutils literal notranslate"><span class="pre">RREA.encode()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.rrea.RREA.get_emb"><code class="docutils literal notranslate"><span class="pre">RREA.get_emb()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.rrea.RREA.load_source_target"><code class="docutils literal notranslate"><span class="pre">RREA.load_source_target()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.rrea.RREA.negative_sample"><code class="docutils literal notranslate"><span class="pre">RREA.negative_sample()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.rrea.RREA.predict"><code class="docutils literal notranslate"><span class="pre">RREA.predict()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.rrea.RREA.prepare_dataloader"><code class="docutils literal notranslate"><span class="pre">RREA.prepare_dataloader()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.rrea.RREA.run_step"><code class="docutils literal notranslate"><span class="pre">RREA.run_step()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.rrea.RREA.training"><code class="docutils literal notranslate"><span class="pre">RREA.training</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="matchbench.model.entity_alignment.html#module-matchbench.model.entity_alignment.sdea">matchbench.model.entity_alignment.sdea module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.Basic_Bert_Unit_model"><code class="docutils literal notranslate"><span class="pre">Basic_Bert_Unit_model</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.Basic_Bert_Unit_model.plm_path"><code class="docutils literal notranslate"><span class="pre">Basic_Bert_Unit_model.plm_path</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.Basic_Bert_Unit_model.basic_input_dim"><code class="docutils literal notranslate"><span class="pre">Basic_Bert_Unit_model.basic_input_dim</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.Basic_Bert_Unit_model.basic_output_dim"><code class="docutils literal notranslate"><span class="pre">Basic_Bert_Unit_model.basic_output_dim</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.Basic_Bert_Unit_model.dropout"><code class="docutils literal notranslate"><span class="pre">Basic_Bert_Unit_model.dropout</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.Basic_Bert_Unit_model.bert_model"><code class="docutils literal notranslate"><span class="pre">Basic_Bert_Unit_model.bert_model</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.Basic_Bert_Unit_model.forward"><code class="docutils literal notranslate"><span class="pre">Basic_Bert_Unit_model.forward()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.Basic_Bert_Unit_model.training"><code class="docutils literal notranslate"><span class="pre">Basic_Bert_Unit_model.training</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.BertDataLoader"><code class="docutils literal notranslate"><span class="pre">BertDataLoader</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.BertDataLoader.line_to_feature"><code class="docutils literal notranslate"><span class="pre">BertDataLoader.line_to_feature()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.BertDataLoader.load_data"><code class="docutils literal notranslate"><span class="pre">BertDataLoader.load_data()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.BertDataLoader.load_freq"><code class="docutils literal notranslate"><span class="pre">BertDataLoader.load_freq()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.BertDataLoader.load_saved_data"><code class="docutils literal notranslate"><span class="pre">BertDataLoader.load_saved_data()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.BertDataLoader.run"><code class="docutils literal notranslate"><span class="pre">BertDataLoader.run()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.BertDataLoader.save_data"><code class="docutils literal notranslate"><span class="pre">BertDataLoader.save_data()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.BertDataLoader.save_token_freq"><code class="docutils literal notranslate"><span class="pre">BertDataLoader.save_token_freq()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.DBPpreprocess"><code class="docutils literal notranslate"><span class="pre">DBPpreprocess()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.Dataset"><code class="docutils literal notranslate"><span class="pre">Dataset</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.Dataset.outputs_csv"><code class="docutils literal notranslate"><span class="pre">Dataset.outputs_csv()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.Dataset.outputs_python"><code class="docutils literal notranslate"><span class="pre">Dataset.outputs_python()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.Dataset.outputs_tab"><code class="docutils literal notranslate"><span class="pre">Dataset.outputs_tab()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.GRUAttnNet"><code class="docutils literal notranslate"><span class="pre">GRUAttnNet</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.GRUAttnNet.attn_net_with_w"><code class="docutils literal notranslate"><span class="pre">GRUAttnNet.attn_net_with_w()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.GRUAttnNet.build_model"><code class="docutils literal notranslate"><span class="pre">GRUAttnNet.build_model()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.GRUAttnNet.forward"><code class="docutils literal notranslate"><span class="pre">GRUAttnNet.forward()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.GRUAttnNet.training"><code class="docutils literal notranslate"><span class="pre">GRUAttnNet.training</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.Highway"><code class="docutils literal notranslate"><span class="pre">Highway</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.Highway.forward"><code class="docutils literal notranslate"><span class="pre">Highway.forward()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.Highway.init_Linear"><code class="docutils literal notranslate"><span class="pre">Highway.init_Linear()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.Highway.training"><code class="docutils literal notranslate"><span class="pre">Highway.training</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.KBStore"><code class="docutils literal notranslate"><span class="pre">KBStore</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.KBStore.add_fact"><code class="docutils literal notranslate"><span class="pre">KBStore.add_fact()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.KBStore.add_item"><code class="docutils literal notranslate"><span class="pre">KBStore.add_item()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.KBStore.add_to_blocks"><code class="docutils literal notranslate"><span class="pre">KBStore.add_to_blocks()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.KBStore.add_tuple"><code class="docutils literal notranslate"><span class="pre">KBStore.add_tuple()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.KBStore.add_word_level_blocks"><code class="docutils literal notranslate"><span class="pre">KBStore.add_word_level_blocks()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.KBStore.calculate_func"><code class="docutils literal notranslate"><span class="pre">KBStore.calculate_func()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.KBStore.get_or_add_item"><code class="docutils literal notranslate"><span class="pre">KBStore.get_or_add_item()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.KBStore.get_property_table_line"><code class="docutils literal notranslate"><span class="pre">KBStore.get_property_table_line()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.KBStore.load"><code class="docutils literal notranslate"><span class="pre">KBStore.load()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.KBStore.load_entities"><code class="docutils literal notranslate"><span class="pre">KBStore.load_entities()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.KBStore.load_facts"><code class="docutils literal notranslate"><span class="pre">KBStore.load_facts()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.KBStore.load_kb"><code class="docutils literal notranslate"><span class="pre">KBStore.load_kb()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.KBStore.load_kb_from_saved"><code class="docutils literal notranslate"><span class="pre">KBStore.load_kb_from_saved()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.KBStore.load_literals"><code class="docutils literal notranslate"><span class="pre">KBStore.load_literals()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.KBStore.load_properties"><code class="docutils literal notranslate"><span class="pre">KBStore.load_properties()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.KBStore.load_relations"><code class="docutils literal notranslate"><span class="pre">KBStore.load_relations()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.KBStore.save_base_info"><code class="docutils literal notranslate"><span class="pre">KBStore.save_base_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.KBStore.save_datas"><code class="docutils literal notranslate"><span class="pre">KBStore.save_datas()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.KBStore.save_facts"><code class="docutils literal notranslate"><span class="pre">KBStore.save_facts()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.KBStore.save_property_table"><code class="docutils literal notranslate"><span class="pre">KBStore.save_property_table()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.KBStore.save_seq_form"><code class="docutils literal notranslate"><span class="pre">KBStore.save_seq_form()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.OEAFileType"><code class="docutils literal notranslate"><span class="pre">OEAFileType</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.OEAFileType.attr"><code class="docutils literal notranslate"><span class="pre">OEAFileType.attr</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.OEAFileType.rel"><code class="docutils literal notranslate"><span class="pre">OEAFileType.rel</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.OEAFileType.ttl_full"><code class="docutils literal notranslate"><span class="pre">OEAFileType.ttl_full</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.PairwiseDataset"><code class="docutils literal notranslate"><span class="pre">PairwiseDataset</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.RelationDataset"><code class="docutils literal notranslate"><span class="pre">RelationDataset</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.RelationDataset.get_matrix"><code class="docutils literal notranslate"><span class="pre">RelationDataset.get_matrix()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.RelationDataset.get_neighbor_matrix"><code class="docutils literal notranslate"><span class="pre">RelationDataset.get_neighbor_matrix()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.RelationModel"><code class="docutils literal notranslate"><span class="pre">RelationModel</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.RelationModel.rnn"><code class="docutils literal notranslate"><span class="pre">RelationModel.rnn</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.RelationModel.combiner"><code class="docutils literal notranslate"><span class="pre">RelationModel.combiner</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.RelationModel.ent_embedding1"><code class="docutils literal notranslate"><span class="pre">RelationModel.ent_embedding1</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.RelationModel.ent_embedding2"><code class="docutils literal notranslate"><span class="pre">RelationModel.ent_embedding2</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.RelationModel.case_study"><code class="docutils literal notranslate"><span class="pre">RelationModel.case_study()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.RelationModel.forward"><code class="docutils literal notranslate"><span class="pre">RelationModel.forward()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.RelationModel.get_emb"><code class="docutils literal notranslate"><span class="pre">RelationModel.get_emb()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.RelationModel.get_ent_embedding"><code class="docutils literal notranslate"><span class="pre">RelationModel.get_ent_embedding()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.RelationModel.get_neighbors_batch"><code class="docutils literal notranslate"><span class="pre">RelationModel.get_neighbors_batch()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.RelationModel.get_rel_embeds"><code class="docutils literal notranslate"><span class="pre">RelationModel.get_rel_embeds()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.RelationModel.pos_neg_count"><code class="docutils literal notranslate"><span class="pre">RelationModel.pos_neg_count()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.RelationModel.training"><code class="docutils literal notranslate"><span class="pre">RelationModel.training</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.RelationValidDataset"><code class="docutils literal notranslate"><span class="pre">RelationValidDataset</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.SDEA"><code class="docutils literal notranslate"><span class="pre">SDEA</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.SDEA.if_neg_sample_2"><code class="docutils literal notranslate"><span class="pre">SDEA.if_neg_sample_2</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.SDEA.all_embed1s"><code class="docutils literal notranslate"><span class="pre">SDEA.all_embed1s</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.SDEA.all_embed2s"><code class="docutils literal notranslate"><span class="pre">SDEA.all_embed2s</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.SDEA.entity_mode"><code class="docutils literal notranslate"><span class="pre">SDEA.entity_mode</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.SDEA.a"><code class="docutils literal notranslate"><span class="pre">SDEA.a()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.SDEA.calculate_loss"><code class="docutils literal notranslate"><span class="pre">SDEA.calculate_loss()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.SDEA.class_name_str"><code class="docutils literal notranslate"><span class="pre">SDEA.class_name_str()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.SDEA.encode"><code class="docutils literal notranslate"><span class="pre">SDEA.encode()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.SDEA.forward"><code class="docutils literal notranslate"><span class="pre">SDEA.forward()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.SDEA.get_tensor_data"><code class="docutils literal notranslate"><span class="pre">SDEA.get_tensor_data()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.SDEA.load_links"><code class="docutils literal notranslate"><span class="pre">SDEA.load_links()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.SDEA.load_links_sep"><code class="docutils literal notranslate"><span class="pre">SDEA.load_links_sep()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.SDEA.load_source_target"><code class="docutils literal notranslate"><span class="pre">SDEA.load_source_target()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.SDEA.negative_sample"><code class="docutils literal notranslate"><span class="pre">SDEA.negative_sample()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.SDEA.oea_truth_line"><code class="docutils literal notranslate"><span class="pre">SDEA.oea_truth_line()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.SDEA.prepare_dataloader"><code class="docutils literal notranslate"><span class="pre">SDEA.prepare_dataloader()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.SDEA.reduce_tokens"><code class="docutils literal notranslate"><span class="pre">SDEA.reduce_tokens()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.SDEA.reduce_tokens_with_freq"><code class="docutils literal notranslate"><span class="pre">SDEA.reduce_tokens_with_freq()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.SDEA.run_step"><code class="docutils literal notranslate"><span class="pre">SDEA.run_step()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.SDEA.training"><code class="docutils literal notranslate"><span class="pre">SDEA.training</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.compress_uri"><code class="docutils literal notranslate"><span class="pre">compress_uri()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.load_list"><code class="docutils literal notranslate"><span class="pre">load_list()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.load_list_p"><code class="docutils literal notranslate"><span class="pre">load_list_p()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.oea_attr_line"><code class="docutils literal notranslate"><span class="pre">oea_attr_line()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.oea_rel_line"><code class="docutils literal notranslate"><span class="pre">oea_rel_line()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.save_dict_p"><code class="docutils literal notranslate"><span class="pre">save_dict_p()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.save_list"><code class="docutils literal notranslate"><span class="pre">save_list()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.save_list_p"><code class="docutils literal notranslate"><span class="pre">save_list_p()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.stripSquareBrackets"><code class="docutils literal notranslate"><span class="pre">stripSquareBrackets()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.strip_square_brackets"><code class="docutils literal notranslate"><span class="pre">strip_square_brackets()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.text_to_word_sequence"><code class="docutils literal notranslate"><span class="pre">text_to_word_sequence()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.sdea.ttl_no_compress_line"><code class="docutils literal notranslate"><span class="pre">ttl_no_compress_line()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="matchbench.model.entity_alignment.html#module-matchbench.model.entity_alignment.seu">matchbench.model.entity_alignment.seu module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.seu.SEU"><code class="docutils literal notranslate"><span class="pre">SEU</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.seu.SEU.cal_sims"><code class="docutils literal notranslate"><span class="pre">SEU.cal_sims()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.seu.SEU.compute_metric"><code class="docutils literal notranslate"><span class="pre">SEU.compute_metric()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.seu.SEU.load_source_target"><code class="docutils literal notranslate"><span class="pre">SEU.load_source_target()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.seu.SEU.predict"><code class="docutils literal notranslate"><span class="pre">SEU.predict()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.seu.SEU.prepare_dataloader"><code class="docutils literal notranslate"><span class="pre">SEU.prepare_dataloader()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.seu.SEU.training"><code class="docutils literal notranslate"><span class="pre">SEU.training</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.seu.load_aligned_pair"><code class="docutils literal notranslate"><span class="pre">load_aligned_pair()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.seu.load_triples"><code class="docutils literal notranslate"><span class="pre">load_triples()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_alignment.html#matchbench.model.entity_alignment.seu.test"><code class="docutils literal notranslate"><span class="pre">test()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="matchbench.model.entity_alignment.html#module-matchbench.model.entity_alignment">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="matchbench.model.entity_matching.html">matchbench.model.entity_matching package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="matchbench.model.entity_matching.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench-model-entity-matching-deepmatcher-module">matchbench.model.entity_matching.deepmatcher module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="matchbench.model.entity_matching.html#module-matchbench.model.entity_matching.ditto">matchbench.model.entity_matching.ditto module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.ditto.DKInjector"><code class="docutils literal notranslate"><span class="pre">DKInjector</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.ditto.DKInjector.initialize"><code class="docutils literal notranslate"><span class="pre">DKInjector.initialize()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.ditto.DKInjector.transform"><code class="docutils literal notranslate"><span class="pre">DKInjector.transform()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.ditto.DKInjector.transform_file"><code class="docutils literal notranslate"><span class="pre">DKInjector.transform_file()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.ditto.Ditto"><code class="docutils literal notranslate"><span class="pre">Ditto</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.ditto.Ditto.calculate_loss"><code class="docutils literal notranslate"><span class="pre">Ditto.calculate_loss()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.ditto.Ditto.forward"><code class="docutils literal notranslate"><span class="pre">Ditto.forward()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.ditto.Ditto.load_source_target"><code class="docutils literal notranslate"><span class="pre">Ditto.load_source_target()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.ditto.Ditto.predict"><code class="docutils literal notranslate"><span class="pre">Ditto.predict()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.ditto.Ditto.prepare_dataloader"><code class="docutils literal notranslate"><span class="pre">Ditto.prepare_dataloader()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.ditto.Ditto.run_step"><code class="docutils literal notranslate"><span class="pre">Ditto.run_step()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.ditto.Ditto.training"><code class="docutils literal notranslate"><span class="pre">Ditto.training</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.ditto.DittoDataLoader"><code class="docutils literal notranslate"><span class="pre">DittoDataLoader</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.ditto.DittoDataLoader.pad"><code class="docutils literal notranslate"><span class="pre">DittoDataLoader.pad()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.ditto.GeneralDKInjector"><code class="docutils literal notranslate"><span class="pre">GeneralDKInjector</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.ditto.GeneralDKInjector.initialize"><code class="docutils literal notranslate"><span class="pre">GeneralDKInjector.initialize()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.ditto.GeneralDKInjector.transform"><code class="docutils literal notranslate"><span class="pre">GeneralDKInjector.transform()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.ditto.ProductDKInjector"><code class="docutils literal notranslate"><span class="pre">ProductDKInjector</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.ditto.ProductDKInjector.initialize"><code class="docutils literal notranslate"><span class="pre">ProductDKInjector.initialize()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.ditto.ProductDKInjector.transform"><code class="docutils literal notranslate"><span class="pre">ProductDKInjector.transform()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.ditto.Summarizer"><code class="docutils literal notranslate"><span class="pre">Summarizer</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.ditto.Summarizer.config"><code class="docutils literal notranslate"><span class="pre">Summarizer.config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.ditto.Summarizer.tokenizer"><code class="docutils literal notranslate"><span class="pre">Summarizer.tokenizer</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.ditto.Summarizer.build_index"><code class="docutils literal notranslate"><span class="pre">Summarizer.build_index()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.ditto.Summarizer.get_len"><code class="docutils literal notranslate"><span class="pre">Summarizer.get_len()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.ditto.Summarizer.transform"><code class="docutils literal notranslate"><span class="pre">Summarizer.transform()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.ditto.Summarizer.transform_file"><code class="docutils literal notranslate"><span class="pre">Summarizer.transform_file()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="matchbench.model.entity_matching.html#module-matchbench.model.entity_matching.jointbert">matchbench.model.entity_matching.jointbert module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.jointbert.BCEWithLogitsLoss"><code class="docutils literal notranslate"><span class="pre">BCEWithLogitsLoss()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.jointbert.BertDataLoaderJoint"><code class="docutils literal notranslate"><span class="pre">BertDataLoaderJoint</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.jointbert.BertDataLoaderJoint.batch_size"><code class="docutils literal notranslate"><span class="pre">BertDataLoaderJoint.batch_size</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.jointbert.BertDataLoaderJoint.dataset"><code class="docutils literal notranslate"><span class="pre">BertDataLoaderJoint.dataset</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.jointbert.BertDataLoaderJoint.drop_last"><code class="docutils literal notranslate"><span class="pre">BertDataLoaderJoint.drop_last</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.jointbert.BertDataLoaderJoint.num_workers"><code class="docutils literal notranslate"><span class="pre">BertDataLoaderJoint.num_workers</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.jointbert.BertDataLoaderJoint.pin_memory"><code class="docutils literal notranslate"><span class="pre">BertDataLoaderJoint.pin_memory</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.jointbert.BertDataLoaderJoint.prefetch_factor"><code class="docutils literal notranslate"><span class="pre">BertDataLoaderJoint.prefetch_factor</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.jointbert.BertDataLoaderJoint.sampler"><code class="docutils literal notranslate"><span class="pre">BertDataLoaderJoint.sampler</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.jointbert.BertDataLoaderJoint.split_validation"><code class="docutils literal notranslate"><span class="pre">BertDataLoaderJoint.split_validation()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.jointbert.BertDataLoaderJoint.timeout"><code class="docutils literal notranslate"><span class="pre">BertDataLoaderJoint.timeout</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.jointbert.DataCollatorWithPadding"><code class="docutils literal notranslate"><span class="pre">DataCollatorWithPadding</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.jointbert.DataCollatorWithPadding.mask_tokens"><code class="docutils literal notranslate"><span class="pre">DataCollatorWithPadding.mask_tokens()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.jointbert.DataCollatorWithPadding.max_length"><code class="docutils literal notranslate"><span class="pre">DataCollatorWithPadding.max_length</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.jointbert.DataCollatorWithPadding.mlm"><code class="docutils literal notranslate"><span class="pre">DataCollatorWithPadding.mlm</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.jointbert.DataCollatorWithPadding.mlm_probability"><code class="docutils literal notranslate"><span class="pre">DataCollatorWithPadding.mlm_probability</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.jointbert.DataCollatorWithPadding.pad_to_multiple_of"><code class="docutils literal notranslate"><span class="pre">DataCollatorWithPadding.pad_to_multiple_of</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.jointbert.DataCollatorWithPadding.padding"><code class="docutils literal notranslate"><span class="pre">DataCollatorWithPadding.padding</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.jointbert.DataCollatorWithPadding.tokenizer"><code class="docutils literal notranslate"><span class="pre">DataCollatorWithPadding.tokenizer</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.jointbert.JointBert"><code class="docutils literal notranslate"><span class="pre">JointBert</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.jointbert.JointBert.calc_weights_label"><code class="docutils literal notranslate"><span class="pre">JointBert.calc_weights_label()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.jointbert.JointBert.forward"><code class="docutils literal notranslate"><span class="pre">JointBert.forward()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.jointbert.JointBert.pair_generator"><code class="docutils literal notranslate"><span class="pre">JointBert.pair_generator()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.jointbert.JointBert.predict"><code class="docutils literal notranslate"><span class="pre">JointBert.predict()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.jointbert.JointBert.prepare_dataloader"><code class="docutils literal notranslate"><span class="pre">JointBert.prepare_dataloader()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.jointbert.JointBert.run_step"><code class="docutils literal notranslate"><span class="pre">JointBert.run_step()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.jointbert.JointBert.training"><code class="docutils literal notranslate"><span class="pre">JointBert.training</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.jointbert.JointBertPrep"><code class="docutils literal notranslate"><span class="pre">JointBertPrep</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.jointbert.assign_clusterid"><code class="docutils literal notranslate"><span class="pre">assign_clusterid()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.jointbert.cluster_id_process"><code class="docutils literal notranslate"><span class="pre">cluster_id_process()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.jointbert.get_cluster_id"><code class="docutils literal notranslate"><span class="pre">get_cluster_id()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.jointbert.get_encoder_deepmatcher"><code class="docutils literal notranslate"><span class="pre">get_encoder_deepmatcher()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.jointbert.process_to_bert"><code class="docutils literal notranslate"><span class="pre">process_to_bert()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="matchbench.model.entity_matching.html#module-matchbench.model.entity_matching.robem">matchbench.model.entity_matching.robem module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.robem.ASLSingleLabel"><code class="docutils literal notranslate"><span class="pre">ASLSingleLabel</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.robem.ASLSingleLabel.forward"><code class="docutils literal notranslate"><span class="pre">ASLSingleLabel.forward()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.robem.ASLSingleLabel.training"><code class="docutils literal notranslate"><span class="pre">ASLSingleLabel.training</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.robem.AugMode"><code class="docutils literal notranslate"><span class="pre">AugMode</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.robem.AugMode.RANDOM_DEL"><code class="docutils literal notranslate"><span class="pre">AugMode.RANDOM_DEL</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.robem.AugMode.REMOVE_CHAR_LESS_THAN"><code class="docutils literal notranslate"><span class="pre">AugMode.REMOVE_CHAR_LESS_THAN</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.robem.AugMode.REMOVE_STOP_WORD"><code class="docutils literal notranslate"><span class="pre">AugMode.REMOVE_STOP_WORD</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.robem.AugMode.ROB_ALL"><code class="docutils literal notranslate"><span class="pre">AugMode.ROB_ALL</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.robem.AugMode.ROB_SFL"><code class="docutils literal notranslate"><span class="pre">AugMode.ROB_SFL</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.robem.AugMode.ROB_SWAP"><code class="docutils literal notranslate"><span class="pre">AugMode.ROB_SWAP</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.robem.BasicAug"><code class="docutils literal notranslate"><span class="pre">BasicAug</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.robem.BasicAug.augment"><code class="docutils literal notranslate"><span class="pre">BasicAug.augment()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.robem.EmDataset"><code class="docutils literal notranslate"><span class="pre">EmDataset</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.robem.EmDataset.input_serializer"><code class="docutils literal notranslate"><span class="pre">EmDataset.input_serializer()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.robem.Highway"><code class="docutils literal notranslate"><span class="pre">Highway</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.robem.Highway.forward"><code class="docutils literal notranslate"><span class="pre">Highway.forward()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.robem.Highway.training"><code class="docutils literal notranslate"><span class="pre">Highway.training</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.robem.RobEM"><code class="docutils literal notranslate"><span class="pre">RobEM</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.robem.RobEM.context_forward"><code class="docutils literal notranslate"><span class="pre">RobEM.context_forward()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.robem.RobEM.context_similarity_layers"><code class="docutils literal notranslate"><span class="pre">RobEM.context_similarity_layers()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.robem.RobEM.forward"><code class="docutils literal notranslate"><span class="pre">RobEM.forward()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.robem.RobEM.get_lm"><code class="docutils literal notranslate"><span class="pre">RobEM.get_lm()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.robem.RobEM.get_lm_class"><code class="docutils literal notranslate"><span class="pre">RobEM.get_lm_class()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.robem.RobEM.get_lm_dim"><code class="docutils literal notranslate"><span class="pre">RobEM.get_lm_dim()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.robem.RobEM.get_tokenizers"><code class="docutils literal notranslate"><span class="pre">RobEM.get_tokenizers()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.robem.RobEM.has_type_token"><code class="docutils literal notranslate"><span class="pre">RobEM.has_type_token()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.robem.RobEM.load_source_target"><code class="docutils literal notranslate"><span class="pre">RobEM.load_source_target()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.robem.RobEM.predict"><code class="docutils literal notranslate"><span class="pre">RobEM.predict()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.robem.RobEM.prepare_dataloader"><code class="docutils literal notranslate"><span class="pre">RobEM.prepare_dataloader()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.robem.RobEM.reset_weights"><code class="docutils literal notranslate"><span class="pre">RobEM.reset_weights()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.robem.RobEM.resize_embedding"><code class="docutils literal notranslate"><span class="pre">RobEM.resize_embedding()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.robem.RobEM.run_step"><code class="docutils literal notranslate"><span class="pre">RobEM.run_step()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.robem.RobEM.training"><code class="docutils literal notranslate"><span class="pre">RobEM.training</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.robem.RobertaClassificationHead"><code class="docutils literal notranslate"><span class="pre">RobertaClassificationHead</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.robem.RobertaClassificationHead.forward"><code class="docutils literal notranslate"><span class="pre">RobertaClassificationHead.forward()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.robem.RobertaClassificationHead.training"><code class="docutils literal notranslate"><span class="pre">RobertaClassificationHead.training</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.robem.RobustAugmenter"><code class="docutils literal notranslate"><span class="pre">RobustAugmenter</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.robem.RobustAugmenter.augment_sent"><code class="docutils literal notranslate"><span class="pre">RobustAugmenter.augment_sent()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.robem.SimpleClassifier"><code class="docutils literal notranslate"><span class="pre">SimpleClassifier</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.robem.SimpleClassifier.forward"><code class="docutils literal notranslate"><span class="pre">SimpleClassifier.forward()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.robem.SimpleClassifier.training"><code class="docutils literal notranslate"><span class="pre">SimpleClassifier.training</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.robem.Summarizer"><code class="docutils literal notranslate"><span class="pre">Summarizer</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.robem.Summarizer.summarize"><code class="docutils literal notranslate"><span class="pre">Summarizer.summarize()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.robem.cosine_similarity"><code class="docutils literal notranslate"><span class="pre">cosine_similarity()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench.model.entity_matching.robem.set_to_device"><code class="docutils literal notranslate"><span class="pre">set_to_device()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="matchbench.model.entity_matching.html#matchbench-model-entity-matching-rotom-module">matchbench.model.entity_matching.rotom module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="matchbench.model.entity_matching.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="matchbench.model.schema_matching.html">matchbench.model.schema_matching package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="matchbench.model.schema_matching.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="matchbench.model.schema_matching.html#module-matchbench.model.schema_matching.embdi">matchbench.model.schema_matching.embdi module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.schema_matching.html#matchbench.model.schema_matching.embdi.Edge"><code class="docutils literal notranslate"><span class="pre">Edge</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.schema_matching.html#matchbench.model.schema_matching.embdi.EdgeList"><code class="docutils literal notranslate"><span class="pre">EdgeList</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.schema_matching.html#matchbench.model.schema_matching.embdi.EdgeList.convert_cell_value"><code class="docutils literal notranslate"><span class="pre">EdgeList.convert_cell_value()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.schema_matching.html#matchbench.model.schema_matching.embdi.EdgeList.convert_to_dict"><code class="docutils literal notranslate"><span class="pre">EdgeList.convert_to_dict()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.schema_matching.html#matchbench.model.schema_matching.embdi.EdgeList.convert_to_numeric"><code class="docutils literal notranslate"><span class="pre">EdgeList.convert_to_numeric()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.schema_matching.html#matchbench.model.schema_matching.embdi.EdgeList.evaluate_frequencies"><code class="docutils literal notranslate"><span class="pre">EdgeList.evaluate_frequencies()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.schema_matching.html#matchbench.model.schema_matching.embdi.EdgeList.f_no_smoothing"><code class="docutils literal notranslate"><span class="pre">EdgeList.f_no_smoothing()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.schema_matching.html#matchbench.model.schema_matching.embdi.EdgeList.find_intersection_flatten"><code class="docutils literal notranslate"><span class="pre">EdgeList.find_intersection_flatten()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.schema_matching.html#matchbench.model.schema_matching.embdi.EdgeList.get_edgelist"><code class="docutils literal notranslate"><span class="pre">EdgeList.get_edgelist()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.schema_matching.html#matchbench.model.schema_matching.embdi.EdgeList.get_prefixes"><code class="docutils literal notranslate"><span class="pre">EdgeList.get_prefixes()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.schema_matching.html#matchbench.model.schema_matching.embdi.EdgeList.inverse_freq"><code class="docutils literal notranslate"><span class="pre">EdgeList.inverse_freq()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.schema_matching.html#matchbench.model.schema_matching.embdi.EdgeList.inverse_smooth"><code class="docutils literal notranslate"><span class="pre">EdgeList.inverse_smooth()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.schema_matching.html#matchbench.model.schema_matching.embdi.EdgeList.log_freq"><code class="docutils literal notranslate"><span class="pre">EdgeList.log_freq()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.schema_matching.html#matchbench.model.schema_matching.embdi.EdgeList.prepare_split"><code class="docutils literal notranslate"><span class="pre">EdgeList.prepare_split()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.schema_matching.html#matchbench.model.schema_matching.embdi.EdgeList.smooth_exp"><code class="docutils literal notranslate"><span class="pre">EdgeList.smooth_exp()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.schema_matching.html#matchbench.model.schema_matching.embdi.EdgeList.smooth_freq"><code class="docutils literal notranslate"><span class="pre">EdgeList.smooth_freq()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.schema_matching.html#matchbench.model.schema_matching.embdi.Embdi"><code class="docutils literal notranslate"><span class="pre">Embdi</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.schema_matching.html#matchbench.model.schema_matching.embdi.Embdi.load_source_target"><code class="docutils literal notranslate"><span class="pre">Embdi.load_source_target()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.schema_matching.html#matchbench.model.schema_matching.embdi.Embdi.predict"><code class="docutils literal notranslate"><span class="pre">Embdi.predict()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.schema_matching.html#matchbench.model.schema_matching.embdi.Embdi.train"><code class="docutils literal notranslate"><span class="pre">Embdi.train()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.schema_matching.html#matchbench.model.schema_matching.embdi.Embdi.training"><code class="docutils literal notranslate"><span class="pre">Embdi.training</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.schema_matching.html#matchbench.model.schema_matching.embdi.Graph"><code class="docutils literal notranslate"><span class="pre">Graph</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.schema_matching.html#matchbench.model.schema_matching.embdi.Graph.add_edge"><code class="docutils literal notranslate"><span class="pre">Graph.add_edge()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.schema_matching.html#matchbench.model.schema_matching.embdi.Graph.add_similarities"><code class="docutils literal notranslate"><span class="pre">Graph.add_similarities()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.schema_matching.html#matchbench.model.schema_matching.embdi.Graph.compute_n_sentences"><code class="docutils literal notranslate"><span class="pre">Graph.compute_n_sentences()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.schema_matching.html#matchbench.model.schema_matching.embdi.Graph.get_graph"><code class="docutils literal notranslate"><span class="pre">Graph.get_graph()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.schema_matching.html#matchbench.model.schema_matching.embdi.Graph.get_node_list"><code class="docutils literal notranslate"><span class="pre">Graph.get_node_list()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.schema_matching.html#matchbench.model.schema_matching.embdi.Graph.produce_intersection"><code class="docutils literal notranslate"><span class="pre">Graph.produce_intersection()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.schema_matching.html#matchbench.model.schema_matching.embdi.Node"><code class="docutils literal notranslate"><span class="pre">Node</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.schema_matching.html#matchbench.model.schema_matching.embdi.Node.add_neighbor"><code class="docutils literal notranslate"><span class="pre">Node.add_neighbor()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.schema_matching.html#matchbench.model.schema_matching.embdi.Node.add_similar"><code class="docutils literal notranslate"><span class="pre">Node.add_similar()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.schema_matching.html#matchbench.model.schema_matching.embdi.Node.get_random_neighbor"><code class="docutils literal notranslate"><span class="pre">Node.get_random_neighbor()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.schema_matching.html#matchbench.model.schema_matching.embdi.Node.get_random_replacement"><code class="docutils literal notranslate"><span class="pre">Node.get_random_replacement()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.schema_matching.html#matchbench.model.schema_matching.embdi.Node.get_random_start"><code class="docutils literal notranslate"><span class="pre">Node.get_random_start()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.schema_matching.html#matchbench.model.schema_matching.embdi.Node.normalize_neighbors"><code class="docutils literal notranslate"><span class="pre">Node.normalize_neighbors()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.schema_matching.html#matchbench.model.schema_matching.embdi.Node.set_frequency"><code class="docutils literal notranslate"><span class="pre">Node.set_frequency()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.model.schema_matching.html#matchbench.model.schema_matching.embdi.RandomWalk"><code class="docutils literal notranslate"><span class="pre">RandomWalk</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.schema_matching.html#matchbench.model.schema_matching.embdi.RandomWalk.get_both_walks"><code class="docutils literal notranslate"><span class="pre">RandomWalk.get_both_walks()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.schema_matching.html#matchbench.model.schema_matching.embdi.RandomWalk.get_reversed_walk"><code class="docutils literal notranslate"><span class="pre">RandomWalk.get_reversed_walk()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.schema_matching.html#matchbench.model.schema_matching.embdi.RandomWalk.get_walk"><code class="docutils literal notranslate"><span class="pre">RandomWalk.get_walk()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.schema_matching.html#matchbench.model.schema_matching.embdi.RandomWalk.replace_numeric_value"><code class="docutils literal notranslate"><span class="pre">RandomWalk.replace_numeric_value()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.schema_matching.html#matchbench.model.schema_matching.embdi.RandomWalk.replace_string_value"><code class="docutils literal notranslate"><span class="pre">RandomWalk.replace_string_value()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="matchbench.model.schema_matching.html#module-matchbench.model.schema_matching">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="module-matchbench.model.base_model">
+<span id="matchbench-model-base-model-module"></span><h2>matchbench.model.base_model module<a class="headerlink" href="#module-matchbench.model.base_model" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="matchbench.model.base_model.CTAModel">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">matchbench.model.base_model.</span></span><span class="sig-name descname"><span class="pre">CTAModel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">multi_label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">loss_function</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.base_model.CTAModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#matchbench.model.base_model.GeneralModel" title="matchbench.model.base_model.GeneralModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">GeneralModel</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.base_model.CTAModel.calculate_loss">
+<span class="sig-name descname"><span class="pre">calculate_loss</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">logits</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.base_model.CTAModel.calculate_loss" title="Permalink to this definition">¶</a></dt>
+<dd><p>Args: logits, label
+Returns: loss</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.base_model.CTAModel.compute_metric">
+<span class="sig-name descname"><span class="pre">compute_metric</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prediction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.base_model.CTAModel.compute_metric" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.base_model.CTAModel.load_source_target">
+<span class="sig-name descname"><span class="pre">load_source_target</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataset_src</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataset_tgt</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.base_model.CTAModel.load_source_target" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.model.base_model.CTAModel.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><span class="pre">bool</span></a></em><a class="headerlink" href="#matchbench.model.base_model.CTAModel.training" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="matchbench.model.base_model.EAModel">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">matchbench.model.base_model.</span></span><span class="sig-name descname"><span class="pre">EAModel</span></span><a class="headerlink" href="#matchbench.model.base_model.EAModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#matchbench.model.base_model.GeneralModel" title="matchbench.model.base_model.GeneralModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">GeneralModel</span></code></a></p>
+<p>Base class for entity alignment models.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.base_model.EAModel.compute_metric">
+<span class="sig-name descname"><span class="pre">compute_metric</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prediction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stage</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.base_model.EAModel.compute_metric" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate the hits.
+:param prediction: the top indexes of each testing entity.
+:type prediction: <cite>torch.tensor</cite></p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>hits&#64;1</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><cite>float</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.base_model.EAModel.compute_metric_stage_2">
+<span class="sig-name descname"><span class="pre">compute_metric_stage_2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prediction</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.base_model.EAModel.compute_metric_stage_2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate the hits.
+:param prediction: the top indexes of each testing entity.
+:type prediction: <cite>torch.tensor</cite></p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>hits&#64;1</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><cite>float</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.base_model.EAModel.get_emb">
+<span class="sig-name descname"><span class="pre">get_emb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">loader</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">device(type='cuda')</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tensor</span></span></span><a class="headerlink" href="#matchbench.model.base_model.EAModel.get_emb" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert a list of entities token ids to a list of embedding after encoder.
+:param loader:
+:type loader: <cite>torch.data.utils.DataLoader</cite>
+:param device: cuda or cpu.
+:type device: <cite>torch.device</cite>, <em>optional</em>, defaults to <cite>“cuda”</cite></p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>the output embeddings of the encoder.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>torch.tensor</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.base_model.EAModel.get_emb_r">
+<span class="sig-name descname"><span class="pre">get_emb_r</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">loader</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataLoader</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rel_embedding</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">all_embed</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">device(type='cuda')</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tensor</span></span></span><a class="headerlink" href="#matchbench.model.base_model.EAModel.get_emb_r" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.base_model.EAModel.load_source_target">
+<span class="sig-name descname"><span class="pre">load_source_target</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataset_src</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataset_tgt</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.base_model.EAModel.load_source_target" title="Permalink to this definition">¶</a></dt>
+<dd><p>Prepare source and target data.
+:param dataset_src: Source dataset.
+:type dataset_src: <cite>datasets.arrow_dataset.Dataset</cite>
+:param dataset_tgt: Target dataset.
+:type dataset_tgt: <cite>datasets.arrow_dataset.Dataset</cite></p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.base_model.EAModel.predict">
+<span class="sig-name descname"><span class="pre">predict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataloader</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">device(type='cuda')</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stage</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">train_dataloader</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.base_model.EAModel.predict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Predict the closest entities of each entity in test set.
+:param dataloader:
+:type dataloader: <cite>torch.data.utils.DataLoader</cite></p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>top indexes.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><cite>torch.tensor</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.base_model.EAModel.predict_stage_2">
+<span class="sig-name descname"><span class="pre">predict_stage_2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataloader</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">device(type='cuda')</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.base_model.EAModel.predict_stage_2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.model.base_model.EAModel.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><span class="pre">bool</span></a></em><a class="headerlink" href="#matchbench.model.base_model.EAModel.training" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="matchbench.model.base_model.EMModel">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">matchbench.model.base_model.</span></span><span class="sig-name descname"><span class="pre">EMModel</span></span><a class="headerlink" href="#matchbench.model.base_model.EMModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#matchbench.model.base_model.GeneralModel" title="matchbench.model.base_model.GeneralModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">GeneralModel</span></code></a></p>
+<p>The basic model for entity matching.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.base_model.EMModel.calculate_thresold">
+<span class="sig-name descname"><span class="pre">calculate_thresold</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">all_y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">all_probs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.base_model.EMModel.calculate_thresold" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate the threshold on 1-class, if probability greater than threshole, the predicted label will be 1.
+:param all_y: The label for dataset.
+:type all_y: <cite>List of int</cite>
+:param all_probs: The probability for dataset.
+:type all_probs: <cite>List of double</cite></p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The threshold on 1-class.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><cite>double</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.base_model.EMModel.compute_metric">
+<span class="sig-name descname"><span class="pre">compute_metric</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pred</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.base_model.EMModel.compute_metric" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute metric for entity matching.
+:param label: The true label.
+:type label: <cite>List of int</cite>
+:param pred: The result predicted by EM model.
+:type pred: <cite>List of int</cite></p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The f1 score.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><cite>float</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.base_model.EMModel.get_sentence">
+<span class="sig-name descname"><span class="pre">get_sentence</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.base_model.EMModel.get_sentence" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get sentence from table.
+:param table: Table that need to be processed.
+:type table: datasets.arrow_dataset.Dataset</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The List of sentences.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><cite>List of str</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.base_model.EMModel.load_source_target">
+<span class="sig-name descname"><span class="pre">load_source_target</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_src</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_tgt</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.base_model.EMModel.load_source_target" title="Permalink to this definition">¶</a></dt>
+<dd><p>Prepare source and target data.
+:param data_src: Source dataset.
+:type data_src: <cite>datasets.dataset_dict.DatasetDict</cite>
+:param data_tgt: Target dataset.
+:type data_tgt: <cite>datasets.dataset_dict.DatasetDict</cite></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.model.base_model.EMModel.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><span class="pre">bool</span></a></em><a class="headerlink" href="#matchbench.model.base_model.EMModel.training" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="matchbench.model.base_model.GeneralModel">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">matchbench.model.base_model.</span></span><span class="sig-name descname"><span class="pre">GeneralModel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.base_model.GeneralModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">PyTorchModelHubMixin</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.base_model.GeneralModel.calculate_loss">
+<span class="sig-name descname"><span class="pre">calculate_loss</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.base_model.GeneralModel.calculate_loss" title="Permalink to this definition">¶</a></dt>
+<dd><p>Args: logits, label
+Returns: loss</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.base_model.GeneralModel.encode">
+<span class="sig-name descname"><span class="pre">encode</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.base_model.GeneralModel.encode" title="Permalink to this definition">¶</a></dt>
+<dd><p>for PLMs, serialization -&gt; CLS embedding (trainable)
+for pretrained word embedding, pair -&gt; embedding (untrainable)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.base_model.GeneralModel.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.base_model.GeneralModel.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p># self.encoder: PLM serialization -&gt; feature vector
+# self.matcher: feature vector -&gt; logits
+for PLMs, encode + match
+for PWEs, match</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.base_model.GeneralModel.match">
+<span class="sig-name descname"><span class="pre">match</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.base_model.GeneralModel.match" title="Permalink to this definition">¶</a></dt>
+<dd><p>embedding -&gt; logits</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.base_model.GeneralModel.predict">
+<span class="sig-name descname"><span class="pre">predict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.base_model.GeneralModel.predict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Args: batch data
+Returns: prediction</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.base_model.GeneralModel.prepare_dataloader">
+<span class="sig-name descname"><span class="pre">prepare_dataloader</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataset</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">split</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'train'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">32</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.base_model.GeneralModel.prepare_dataloader" title="Permalink to this definition">¶</a></dt>
+<dd><p>for PLMs, serialize
+for PWEs, encode</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.base_model.GeneralModel.run_step">
+<span class="sig-name descname"><span class="pre">run_step</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.base_model.GeneralModel.run_step" title="Permalink to this definition">¶</a></dt>
+<dd><p>Args: batch data
+Returns: loss</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.base_model.GeneralModel.serialize">
+<span class="sig-name descname"><span class="pre">serialize</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.base_model.GeneralModel.serialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>for PLMs, pair -&gt; PLM serialization
+for pretrained word embedding, no need.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.model.base_model.GeneralModel.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><span class="pre">bool</span></a></em><a class="headerlink" href="#matchbench.model.base_model.GeneralModel.training" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="matchbench.model.base_model.SMModel">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">matchbench.model.base_model.</span></span><span class="sig-name descname"><span class="pre">SMModel</span></span><a class="headerlink" href="#matchbench.model.base_model.SMModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#matchbench.model.base_model.GeneralModel" title="matchbench.model.base_model.GeneralModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">GeneralModel</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.model.base_model.SMModel.compute_metric">
+<span class="sig-name descname"><span class="pre">compute_metric</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">match_results</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ground_truth</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.base_model.SMModel.compute_metric" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.model.base_model.SMModel.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><span class="pre">bool</span></a></em><a class="headerlink" href="#matchbench.model.base_model.SMModel.training" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.model.base_model.f1_score_multilabel">
+<span class="sig-prename descclassname"><span class="pre">matchbench.model.base_model.</span></span><span class="sig-name descname"><span class="pre">f1_score_multilabel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">true_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pred_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.model.base_model.f1_score_multilabel" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-matchbench.model">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-matchbench.model" title="Permalink to this heading">¶</a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="matchbench.model.column_type_annotation.html" class="btn btn-neutral float-right" title="matchbench.model.column_type_annotation package" accesskey="n">Next →</a>
+      
+      
+        <a href="matchbench.evaluator.html" class="btn btn-neutral" title="matchbench.evaluator package" accesskey="p">← Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2023, MatchBench group.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE: 'true'
+        };
+    </script>
+      <script type="text/javascript" src="_static/documentation_options.js"></script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/sphinx_highlight.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

@@ -1,0 +1,1033 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>matchbench.utils package &mdash; MatchBench  documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="MatchBench  documentation" href="index.html"/>
+        <link rel="up" title="matchbench package" href="matchbench.html"/>
+        <link rel="prev" title="matchbench.trainer package" href="matchbench.trainer.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> MatchBench
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="md_file/Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="md_file/GettingStarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="md_file/UserGuides.html">User Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="md_file/DeveloperGuides.html">Developer Guides</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">matchbench</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="matchbench.html">matchbench package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="matchbench.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="matchbench.dataset.html">matchbench.dataset package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.evaluator.html">matchbench.evaluator package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.html">matchbench.model package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.pair_gen.html">matchbench.pair_gen package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.trainer.html">matchbench.trainer package</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">matchbench.utils package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.html#module-matchbench">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">MatchBench</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">matchbench</a> &raquo;</li>
+        
+          <li><a href="matchbench.html">matchbench package</a> &raquo;</li>
+        
+      <li>matchbench.utils package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/matchbench.utils.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <section id="matchbench-utils-package">
+<h1>matchbench.utils package<a class="headerlink" href="#matchbench-utils-package" title="Permalink to this heading">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="module-matchbench.utils.column_feature">
+<span id="matchbench-utils-column-feature-module"></span><h2>matchbench.utils.column_feature module<a class="headerlink" href="#module-matchbench.utils.column_feature" title="Permalink to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.column_feature.convert_string_lists_to_lists">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.column_feature.</span></span><span class="sig-name descname"><span class="pre">convert_string_lists_to_lists</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">labels</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.column_feature.convert_string_lists_to_lists" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.column_feature.extract_bag_of_characters_features">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.column_feature.</span></span><span class="sig-name descname"><span class="pre">extract_bag_of_characters_features</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.column_feature.extract_bag_of_characters_features" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.column_feature.extract_bag_of_words_features">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.column_feature.</span></span><span class="sig-name descname"><span class="pre">extract_bag_of_words_features</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.column_feature.extract_bag_of_words_features" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.column_feature.extract_topic_features">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.column_feature.</span></span><span class="sig-name descname"><span class="pre">extract_topic_features</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lda</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dic</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">long_threshold</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">numeric_rep</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.column_feature.extract_topic_features" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.column_feature.extract_word_embeddings_features">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.column_feature.</span></span><span class="sig-name descname"><span class="pre">extract_word_embeddings_features</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">word_to_embedding</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_embeddings</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">values</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.column_feature.extract_word_embeddings_features" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.column_feature.infer_paragraph_embeddings_features">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.column_feature.</span></span><span class="sig-name descname"><span class="pre">infer_paragraph_embeddings_features</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.column_feature.infer_paragraph_embeddings_features" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.column_feature.process_col">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.column_feature.</span></span><span class="sig-name descname"><span class="pre">process_col</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">col</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">long_threshold</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numeric_rep</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.column_feature.process_col" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="matchbench-utils-dataset-module">
+<h2>matchbench.utils.dataset module<a class="headerlink" href="#matchbench-utils-dataset-module" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="module-matchbench.utils.dto">
+<span id="matchbench-utils-dto-module"></span><h2>matchbench.utils.dto module<a class="headerlink" href="#module-matchbench.utils.dto" title="Permalink to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.dto.make_file">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.dto.</span></span><span class="sig-name descname"><span class="pre">make_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.dto.make_file" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.dto.readobj">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.dto.</span></span><span class="sig-name descname"><span class="pre">readobj</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fname</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.dto.readobj" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.dto.save_array">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.dto.</span></span><span class="sig-name descname"><span class="pre">save_array</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">arr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">print_len</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sort_by</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">descending</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'\t'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">encoding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'utf-8'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.dto.save_array" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.dto.save_map">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.dto.</span></span><span class="sig-name descname"><span class="pre">save_map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reverse_kv</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sort_by_key</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.dto.save_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.dto.saveobj">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.dto.</span></span><span class="sig-name descname"><span class="pre">saveobj</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fname</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.dto.saveobj" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.dto.to_json">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.dto.</span></span><span class="sig-name descname"><span class="pre">to_json</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.dto.to_json" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-matchbench.utils.emb_loader">
+<span id="matchbench-utils-emb-loader-module"></span><h2>matchbench.utils.emb_loader module<a class="headerlink" href="#module-matchbench.utils.emb_loader" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="matchbench.utils.emb_loader.BERT">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">matchbench.utils.emb_loader.</span></span><span class="sig-name descname"><span class="pre">BERT</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'bert-base-cased'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pool</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'max'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.emb_loader.BERT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.utils.emb_loader.BERT.bert_encode">
+<span class="sig-name descname"><span class="pre">bert_encode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sentences</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">layer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.emb_loader.BERT.bert_encode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.utils.emb_loader.BERT.pooled_bert_encode">
+<span class="sig-name descname"><span class="pre">pooled_bert_encode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sentences</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">layer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.emb_loader.BERT.pooled_bert_encode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.utils.emb_loader.BERT.pooled_encode_batched">
+<span class="sig-name descname"><span class="pre">pooled_encode_batched</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sentences</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">512</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">layer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">save_gpu_memory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.emb_loader.BERT.pooled_encode_batched" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.utils.emb_loader.BERT.to">
+<span class="sig-name descname"><span class="pre">to</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">device</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.emb_loader.BERT.to" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="matchbench.utils.emb_loader.EmbeddingLoader">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">matchbench.utils.emb_loader.</span></span><span class="sig-name descname"><span class="pre">EmbeddingLoader</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'xlm-roberta-base'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">device(type='cuda')</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">layer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.emb_loader.EmbeddingLoader" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.utils.emb_loader.EmbeddingLoader.TR_Models">
+<span class="sig-name descname"><span class="pre">TR_Models</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'bert-base-cased':</span> <span class="pre">(&lt;class</span> <span class="pre">'transformers.models.bert.modeling_bert.BertModel'&gt;,</span> <span class="pre">&lt;class</span> <span class="pre">'transformers.models.bert.tokenization_bert.BertTokenizer'&gt;),</span> <span class="pre">'bert-base-multilingual-cased':</span> <span class="pre">(&lt;class</span> <span class="pre">'transformers.models.bert.modeling_bert.BertModel'&gt;,</span> <span class="pre">&lt;class</span> <span class="pre">'transformers.models.bert.tokenization_bert.BertTokenizer'&gt;),</span> <span class="pre">'bert-base-multilingual-uncased':</span> <span class="pre">(&lt;class</span> <span class="pre">'transformers.models.bert.modeling_bert.BertModel'&gt;,</span> <span class="pre">&lt;class</span> <span class="pre">'transformers.models.bert.tokenization_bert.BertTokenizer'&gt;),</span> <span class="pre">'bert-base-uncased':</span> <span class="pre">(&lt;class</span> <span class="pre">'transformers.models.bert.modeling_bert.BertModel'&gt;,</span> <span class="pre">&lt;class</span> <span class="pre">'transformers.models.bert.tokenization_bert.BertTokenizer'&gt;),</span> <span class="pre">'roberta-base':</span> <span class="pre">(&lt;class</span> <span class="pre">'transformers.models.roberta.modeling_roberta.RobertaModel'&gt;,</span> <span class="pre">&lt;class</span> <span class="pre">'transformers.models.roberta.tokenization_roberta.RobertaTokenizer'&gt;),</span> <span class="pre">'xlm-mlm-100-1280':</span> <span class="pre">(&lt;class</span> <span class="pre">'transformers.models.xlm.modeling_xlm.XLMModel'&gt;,</span> <span class="pre">&lt;class</span> <span class="pre">'transformers.models.xlm.tokenization_xlm.XLMTokenizer'&gt;),</span> <span class="pre">'xlm-roberta-base':</span> <span class="pre">(&lt;class</span> <span class="pre">'transformers.models.xlm_roberta.modeling_xlm_roberta.XLMRobertaModel'&gt;,</span> <span class="pre">&lt;class</span> <span class="pre">'transformers.utils.dummy_sentencepiece_objects.XLMRobertaTokenizer'&gt;),</span> <span class="pre">'xlm-roberta-large':</span> <span class="pre">(&lt;class</span> <span class="pre">'transformers.models.xlm_roberta.modeling_xlm_roberta.XLMRobertaModel'&gt;,</span> <span class="pre">&lt;class</span> <span class="pre">'transformers.utils.dummy_sentencepiece_objects.XLMRobertaTokenizer'&gt;)}</span></em><a class="headerlink" href="#matchbench.utils.emb_loader.EmbeddingLoader.TR_Models" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.utils.emb_loader.EmbeddingLoader.get_embed_list">
+<span class="sig-name descname"><span class="pre">get_embed_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sent_batch</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.11)"><span class="pre">List</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.11)"><span class="pre">List</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">get_length</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.11)"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><span class="pre">Tensor</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Tuple" title="(in Python v3.11)"><span class="pre">Tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">Tensor</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Tensor</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#matchbench.utils.emb_loader.EmbeddingLoader.get_embed_list" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.utils.emb_loader.EmbeddingLoader.get_tokenizer">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_tokenizer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.emb_loader.EmbeddingLoader.get_tokenizer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.utils.emb_loader.EmbeddingLoader.pretrained_models">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">pretrained_models</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.emb_loader.EmbeddingLoader.pretrained_models" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.emb_loader.average_embeds_over_words">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.emb_loader.</span></span><span class="sig-name descname"><span class="pre">average_embeds_over_words</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bpe_vectors</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">word_tokens_pair</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.11)"><span class="pre">List</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.11)"><span class="pre">List</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.11)"><span class="pre">List</span></a><span class="p"><span class="pre">[</span></span><span class="pre">array</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#matchbench.utils.emb_loader.average_embeds_over_words" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.emb_loader.minus_mask">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.emb_loader.</span></span><span class="sig-name descname"><span class="pre">minus_mask</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">inputs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_lens</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mask_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'max'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.emb_loader.minus_mask" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-matchbench.utils.eval">
+<span id="matchbench-utils-eval-module"></span><h2>matchbench.utils.eval module<a class="headerlink" href="#module-matchbench.utils.eval" title="Permalink to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.eval.bi_csls_matrix">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.eval.</span></span><span class="sig-name descname"><span class="pre">bi_csls_matrix</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sim_matrix0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sim_matrix1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">k</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.11)"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><span class="pre">Tensor</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Tuple" title="(in Python v3.11)"><span class="pre">Tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">Tensor</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Tensor</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#matchbench.utils.eval.bi_csls_matrix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.eval.csls_impl">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.eval.</span></span><span class="sig-name descname"><span class="pre">csls_impl</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sim_matrix</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dist0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dist1</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tensor</span></span></span><a class="headerlink" href="#matchbench.utils.eval.csls_impl" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.eval.evaluate_embeds">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.eval.</span></span><span class="sig-name descname"><span class="pre">evaluate_embeds</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">src_emb</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">trg_emb</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">link</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mapping</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">no_csls</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rev</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mrr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.eval.evaluate_embeds" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.eval.evaluate_sim_matrix">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.eval.</span></span><span class="sig-name descname"><span class="pre">evaluate_sim_matrix</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">link</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sim_x2y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sim_y2x</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ignore</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(None,</span> <span class="pre">None)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'\t'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">no_csls</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mrr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.eval.evaluate_sim_matrix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.eval.get_cos_sim">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.eval.</span></span><span class="sig-name descname"><span class="pre">get_cos_sim</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">src_emb</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">trg_emb</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">k_ent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Tuple" title="(in Python v3.11)"><span class="pre">Tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">Tensor</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Tensor</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Tensor</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#matchbench.utils.eval.get_cos_sim" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.eval.get_csls_sim">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.eval.</span></span><span class="sig-name descname"><span class="pre">get_csls_sim</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sim_matrix</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dist0</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dist1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Tuple" title="(in Python v3.11)"><span class="pre">Tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">Tensor</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Tensor</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Tensor</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#matchbench.utils.eval.get_csls_sim" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.eval.get_hit_k">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.eval.</span></span><span class="sig-name descname"><span class="pre">get_hit_k</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">match_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">link</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">k_list</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(1,</span> <span class="pre">3,</span> <span class="pre">5,</span> <span class="pre">10)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ignore</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.eval.get_hit_k" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.eval.get_mrr">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.eval.</span></span><span class="sig-name descname"><span class="pre">get_mrr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">link</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sim_matrix</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">which</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4096</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'\t'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.eval.get_mrr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.eval.get_topk_sim">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.eval.</span></span><span class="sig-name descname"><span class="pre">get_topk_sim</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sim</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">k_ent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Tuple" title="(in Python v3.11)"><span class="pre">Tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">Tensor</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Tensor</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Tensor</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#matchbench.utils.eval.get_topk_sim" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.eval.sparse_acc">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.eval.</span></span><span class="sig-name descname"><span class="pre">sparse_acc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sp_sim</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">link</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'cpu'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.eval.sparse_acc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.eval.sparse_top_k">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.eval.</span></span><span class="sig-name descname"><span class="pre">sparse_top_k</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sp_sim</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">link</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'cuda'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">needed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(1,</span> <span class="pre">5,</span> <span class="pre">50)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">512</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.eval.sparse_top_k" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.eval.truncated_mrr">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.eval.</span></span><span class="sig-name descname"><span class="pre">truncated_mrr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">topks</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">link</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fail</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.eval.truncated_mrr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-matchbench.utils.file_tools">
+<span id="matchbench-utils-file-tools-module"></span><h2>matchbench.utils.file_tools module<a class="headerlink" href="#module-matchbench.utils.file_tools" title="Permalink to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.file_tools.att_file_make">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.file_tools.</span></span><span class="sig-name descname"><span class="pre">att_file_make</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">keep_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">remove_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keep_file_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">remove_file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.file_tools.att_file_make" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save entity alignment attributes.</p>
+</dd></dl>
+
+</section>
+<section id="module-matchbench.utils.fuse">
+<span id="matchbench-utils-fuse-module"></span><h2>matchbench.utils.fuse module<a class="headerlink" href="#module-matchbench.utils.fuse" title="Permalink to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.fuse.naive_sim_fuser">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.fuse.</span></span><span class="sig-name descname"><span class="pre">naive_sim_fuser</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sims</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">param</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'cuda'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.fuse.naive_sim_fuser" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.fuse.subscribe">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.fuse.</span></span><span class="sig-name descname"><span class="pre">subscribe</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">i</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.fuse.subscribe" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-matchbench.utils.load">
+<span id="matchbench-utils-load-module"></span><h2>matchbench.utils.load module<a class="headerlink" href="#module-matchbench.utils.load" title="Permalink to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.load.load_model">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.load.</span></span><span class="sig-name descname"><span class="pre">load_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model:</span> <span class="pre">&lt;module</span> <span class="pre">'torch.nn.modules'</span> <span class="pre">from</span> <span class="pre">'C:\\env\\conda\\envs\\matchbench\\lib\\site-packages\\torch\\nn\\modules\\__init__.py'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path:</span> <span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.load.load_model" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.load.save_model">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.load.</span></span><span class="sig-name descname"><span class="pre">save_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model:</span> <span class="pre">&lt;module</span> <span class="pre">'torch.nn.modules'</span> <span class="pre">from</span> <span class="pre">'C:\\env\\conda\\envs\\matchbench\\lib\\site-packages\\torch\\nn\\modules\\__init__.py'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path:</span> <span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.load.save_model" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.load.set_seed">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.load.</span></span><span class="sig-name descname"><span class="pre">set_seed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">seed</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.load.set_seed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set random seed.</p>
+</dd></dl>
+
+</section>
+<section id="matchbench-utils-nxmetis-module">
+<h2>matchbench.utils.nxmetis module<a class="headerlink" href="#matchbench-utils-nxmetis-module" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="matchbench-utils-partition-module">
+<h2>matchbench.utils.partition module<a class="headerlink" href="#matchbench-utils-partition-module" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="matchbench-utils-sampler-module">
+<h2>matchbench.utils.sampler module<a class="headerlink" href="#matchbench-utils-sampler-module" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="module-matchbench.utils.text_sim">
+<span id="matchbench-utils-text-sim-module"></span><h2>matchbench.utils.text_sim module<a class="headerlink" href="#module-matchbench.utils.text_sim" title="Permalink to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.text_sim.approximate_sim">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.text_sim.</span></span><span class="sig-name descname"><span class="pre">approximate_sim</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">src</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mapping</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">trg</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rank</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">niter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keep_k</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5000</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.text_sim.approximate_sim" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.text_sim.calc_topk_sim">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.text_sim.</span></span><span class="sig-name descname"><span class="pre">calc_topk_sim</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">k</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">which</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2048</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">split</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lazy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.text_sim.calc_topk_sim" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.text_sim.get_bert_maxpooling_embs">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.text_sim.</span></span><span class="sig-name descname"><span class="pre">get_bert_maxpooling_embs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ent1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.11)"><span class="pre">Dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ent2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.11)"><span class="pre">Dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">encode_batch_sz</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2048</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'bert-base-multilingual-cased'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'cuda'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.text_sim.get_bert_maxpooling_embs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.text_sim.get_ent_token_info">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.text_sim.</span></span><span class="sig-name descname"><span class="pre">get_ent_token_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ent1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.11)"><span class="pre">Dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ent2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.11)"><span class="pre">Dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'cuda'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">save_prefix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'ei_'</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Tuple" title="(in Python v3.11)"><span class="pre">Tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#matchbench.utils.text_utils.EntTokenInfo" title="matchbench.utils.text_utils.EntTokenInfo"><span class="pre">EntTokenInfo</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#matchbench.utils.text_utils.EntTokenInfo" title="matchbench.utils.text_utils.EntTokenInfo"><span class="pre">EntTokenInfo</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#matchbench.utils.text_sim.get_ent_token_info" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.text_sim.lazy_topk">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.text_sim.</span></span><span class="sig-name descname"><span class="pre">lazy_topk</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">k</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">req</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'both'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.11)"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Tuple" title="(in Python v3.11)"><span class="pre">Tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">Tensor</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Tensor</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Tensor</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#matchbench.utils.text_sim.lazy_topk" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.text_sim.makeset">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.text_sim.</span></span><span class="sig-name descname"><span class="pre">makeset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ent_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_perm</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.text_sim.makeset" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.text_sim.matrix_sinkhorn">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.text_sim.</span></span><span class="sig-name descname"><span class="pre">matrix_sinkhorn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pred_or_m</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.text_sim.matrix_sinkhorn" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.text_sim.minhash_select_pairs">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.text_sim.</span></span><span class="sig-name descname"><span class="pre">minhash_select_pairs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">e1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Iterable" title="(in Python v3.11)"><span class="pre">Iterable</span></a><span class="p"><span class="pre">[</span></span><span class="pre">MinHash</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">e2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Iterable" title="(in Python v3.11)"><span class="pre">Iterable</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">begin_with</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_perm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">128</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">redis_port</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">6138</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.text_sim.minhash_select_pairs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.text_sim.sinkhorn_process">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.text_sim.</span></span><span class="sig-name descname"><span class="pre">sinkhorn_process</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">M</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.text_sim.sinkhorn_process" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.text_sim.sparse_semantic_sim">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.text_sim.</span></span><span class="sig-name descname"><span class="pre">sparse_semantic_sim</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">e1info</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#matchbench.utils.text_utils.EntTokenInfo" title="matchbench.utils.text_utils.EntTokenInfo"><span class="pre">EntTokenInfo</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">e2info</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#matchbench.utils.text_utils.EntTokenInfo" title="matchbench.utils.text_utils.EntTokenInfo"><span class="pre">EntTokenInfo</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">device</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'cuda'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filter_token_cnt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tensor</span></span></span><a class="headerlink" href="#matchbench.utils.text_sim.sparse_semantic_sim" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.text_sim.sparse_string_sim">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.text_sim.</span></span><span class="sig-name descname"><span class="pre">sparse_string_sim</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ent1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ent2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1000000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_perm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">128</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tensor</span></span></span><a class="headerlink" href="#matchbench.utils.text_sim.sparse_string_sim" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.text_sim.token_level_similarity">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.text_sim.</span></span><span class="sig-name descname"><span class="pre">token_level_similarity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">src_w2e</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">trg_w2e</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_word_x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">trg_word_x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sparse_k</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dense_mm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">do_sinkhorn</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.text_sim.token_level_similarity" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.text_sim.union">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.text_sim.</span></span><span class="sig-name descname"><span class="pre">union</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sa</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sb</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">now</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.text_sim.union" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-matchbench.utils.text_utils">
+<span id="matchbench-utils-text-utils-module"></span><h2>matchbench.utils.text_utils module<a class="headerlink" href="#module-matchbench.utils.text_utils" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="matchbench.utils.text_utils.EntTokenInfo">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">matchbench.utils.text_utils.</span></span><span class="sig-name descname"><span class="pre">EntTokenInfo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ents</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">words</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">emb</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">w2e</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">e2w</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.text_utils.EntTokenInfo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.utils.text_utils.EntTokenInfo.e2w">
+<span class="sig-name descname"><span class="pre">e2w</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.11)"><span class="pre">List</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.11)"><span class="pre">List</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#matchbench.utils.text_utils.EntTokenInfo.e2w" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.utils.text_utils.EntTokenInfo.emb">
+<span class="sig-name descname"><span class="pre">emb</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Tensor</span></em><a class="headerlink" href="#matchbench.utils.text_utils.EntTokenInfo.emb" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.utils.text_utils.EntTokenInfo.ent_cnt">
+<span class="sig-name descname"><span class="pre">ent_cnt</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.text_utils.EntTokenInfo.ent_cnt" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.utils.text_utils.EntTokenInfo.ents">
+<span class="sig-name descname"><span class="pre">ents</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.11)"><span class="pre">Dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#matchbench.utils.text_utils.EntTokenInfo.ents" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.utils.text_utils.EntTokenInfo.filter_tokens">
+<span class="sig-name descname"><span class="pre">filter_tokens</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">k</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">25</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.text_utils.EntTokenInfo.filter_tokens" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.utils.text_utils.EntTokenInfo.get_tf_idf">
+<span class="sig-name descname"><span class="pre">get_tf_idf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filter_eps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filter_tokens</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.text_utils.EntTokenInfo.get_tf_idf" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.utils.text_utils.EntTokenInfo.load">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">load</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.text_utils.EntTokenInfo.load" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.utils.text_utils.EntTokenInfo.save">
+<span class="sig-name descname"><span class="pre">save</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.text_utils.EntTokenInfo.save" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.utils.text_utils.EntTokenInfo.static_high_freq_words">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">static_high_freq_words</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">w2e</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">word_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">k</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">25</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.text_utils.EntTokenInfo.static_high_freq_words" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.utils.text_utils.EntTokenInfo.static_punc_tokens">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">static_punc_tokens</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">word_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">punc</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.text_utils.EntTokenInfo.static_punc_tokens" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.utils.text_utils.EntTokenInfo.w2e">
+<span class="sig-name descname"><span class="pre">w2e</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.11)"><span class="pre">List</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Set" title="(in Python v3.11)"><span class="pre">Set</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#matchbench.utils.text_utils.EntTokenInfo.w2e" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.utils.text_utils.EntTokenInfo.word_cnt">
+<span class="sig-name descname"><span class="pre">word_cnt</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.text_utils.EntTokenInfo.word_cnt" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.utils.text_utils.EntTokenInfo.words">
+<span class="sig-name descname"><span class="pre">words</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.11)"><span class="pre">List</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#matchbench.utils.text_utils.EntTokenInfo.words" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.text_utils.cpm_embedding">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.text_utils.</span></span><span class="sig-name descname"><span class="pre">cpm_embedding</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ent2word</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">words</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cpm_types</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">models</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">('en',</span> <span class="pre">'fr')</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.text_utils.cpm_embedding" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.text_utils.edit_dist_of">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.text_utils.</span></span><span class="sig-name descname"><span class="pre">edit_dist_of</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sent0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sent1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">item</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.text_utils.edit_dist_of" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.text_utils.embed_word2entity">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.text_utils.</span></span><span class="sig-name descname"><span class="pre">embed_word2entity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ent2word</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">word_emb</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reduction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'max'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tensor</span></span></span><a class="headerlink" href="#matchbench.utils.text_utils.embed_word2entity" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.text_utils.faiss_search_impl">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.text_utils.</span></span><span class="sig-name descname"><span class="pre">faiss_search_impl</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">emb_q</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">emb_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">emb_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shift</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">k</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">50</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">search_batch_sz</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">50000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gpu</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.text_utils.faiss_search_impl" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.text_utils.gen_mean">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.text_utils.</span></span><span class="sig-name descname"><span class="pre">gen_mean</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vals</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.text_utils.gen_mean" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.text_utils.get_batch_sim">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.text_utils.</span></span><span class="sig-name descname"><span class="pre">get_batch_sim</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">embed</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">topk</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">50</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">split</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.text_utils.get_batch_sim" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.text_utils.get_count">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.text_utils.</span></span><span class="sig-name descname"><span class="pre">get_count</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">words</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ent_lists</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">binary</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.text_utils.get_count" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.text_utils.get_fasttext_aligned_vectors">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.text_utils.</span></span><span class="sig-name descname"><span class="pre">get_fasttext_aligned_vectors</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">words</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lang</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.text_utils.get_fasttext_aligned_vectors" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.text_utils.get_name_feature_map">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.text_utils.</span></span><span class="sig-name descname"><span class="pre">get_name_feature_map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sents</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">embedding_loader</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'cuda'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1024</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_fasttext</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lang</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.text_utils.get_name_feature_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.text_utils.get_punctuations">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.text_utils.</span></span><span class="sig-name descname"><span class="pre">get_punctuations</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.text_utils.get_punctuations" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.text_utils.get_tf_idf">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.text_utils.</span></span><span class="sig-name descname"><span class="pre">get_tf_idf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">words</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ent_lists</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bert_tokenizer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.text_utils.get_tf_idf" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.text_utils.global_level_semantic_sim">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.text_utils.</span></span><span class="sig-name descname"><span class="pre">global_level_semantic_sim</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">embs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">k</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">50</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">search_batch_sz</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">50000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index_batch_sz</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">500000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">split</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gpu</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.text_utils.global_level_semantic_sim" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.text_utils.normalize_vectors">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.text_utils.</span></span><span class="sig-name descname"><span class="pre">normalize_vectors</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">embeddings</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">center</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.text_utils.normalize_vectors" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.text_utils.pairwise_edit_distance">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.text_utils.</span></span><span class="sig-name descname"><span class="pre">pairwise_edit_distance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sent0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sent1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">to_tensor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.text_utils.pairwise_edit_distance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.text_utils.reduce">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.text_utils.</span></span><span class="sig-name descname"><span class="pre">reduce</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reduction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'mean'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.text_utils.reduce" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.text_utils.remove_prefix_to_list">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.text_utils.</span></span><span class="sig-name descname"><span class="pre">remove_prefix_to_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entity_dict</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">{}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'http(s)?://[a-z\\.]+/[^/]+/'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">punc</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#matchbench.utils.text_utils.remove_prefix_to_list" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.text_utils.remove_punc">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.text_utils.</span></span><span class="sig-name descname"><span class="pre">remove_punc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">punc</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.text_utils.remove_punc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.text_utils.selected_edit_distance">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.text_utils.</span></span><span class="sig-name descname"><span class="pre">selected_edit_distance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sent0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sent1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">needed</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100000</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.text_utils.selected_edit_distance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.text_utils.tokenize">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.text_utils.</span></span><span class="sig-name descname"><span class="pre">tokenize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sent</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tokenizer</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.text_utils.tokenize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-matchbench.utils.utils">
+<span id="matchbench-utils-utils-module"></span><h2>matchbench.utils.utils module<a class="headerlink" href="#module-matchbench.utils.utils" title="Permalink to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.add_cnt_for">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">add_cnt_for</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">val</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">begin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.utils.add_cnt_for" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>mp</strong> – dict, mp[val: int]=id: int</p></li>
+<li><p><strong>val</strong> – old_id</p></li>
+<li><p><strong>begin</strong> – cur_id</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.add_logs">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">add_logs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">k</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">v</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.utils.add_logs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.apply">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">apply</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.utils.apply" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.apply_on_sparse">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">apply_on_sparse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tensor</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.utils.apply_on_sparse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.argprint">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">argprint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.utils.argprint" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.batch_spspmm">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">batch_spspmm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filter_softmax</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.01</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.utils.batch_spspmm" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.cosine_distance">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">cosine_distance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1e-08</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.utils.cosine_distance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.cosine_sim">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">cosine_sim</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1e-08</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.utils.cosine_sim" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.dense_to_sparse">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">dense_to_sparse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.utils.dense_to_sparse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.dict_values_to_tensor">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">dict_values_to_tensor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">d</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">{}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'cuda'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.utils.dict_values_to_tensor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.filter_which">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">filter_which</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.utils.filter_which" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.get_iv">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">get_iv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sps</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.11)"><span class="pre">List</span></a><span class="p"><span class="pre">[</span></span><span class="pre">Tensor</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.utils.get_iv" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.has_key">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">has_key</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">k</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.utils.has_key" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.ind2sparse">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">ind2sparse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">indices</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dtype</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">torch.float32</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">values</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.utils.ind2sparse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.lst_argmax">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">lst_argmax</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lst</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.11)"><span class="pre">List</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Any" title="(in Python v3.11)"><span class="pre">Any</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.utils.lst_argmax" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.masked_minmax">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">masked_minmax</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1e-08</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">masked_val</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">in_place</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.utils.masked_minmax" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.matrix_argmax">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">matrix_argmax</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tensor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.utils.matrix_argmax" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.matrix_argmin">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">matrix_argmin</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tensor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.utils.matrix_argmin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.minmax">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">minmax</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1e-08</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">in_place</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tensor</span></span></span><a class="headerlink" href="#matchbench.utils.utils.minmax" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.mp2list">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">mp2list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">assoc</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.utils.mp2list" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.norm_embed">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">norm_embed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">embed</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tensor</span></span></span><a class="headerlink" href="#matchbench.utils.utils.norm_embed" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.norm_process">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">norm_process</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">embed</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1e-05</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tensor</span></span></span><a class="headerlink" href="#matchbench.utils.utils.norm_process" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.orthogonal_projection">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">orthogonal_projection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">W</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tensor</span></span></span><a class="headerlink" href="#matchbench.utils.utils.orthogonal_projection" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.print_size">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">print_size</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.utils.print_size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.procrustes">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">procrustes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">emb1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">emb2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">link0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">link1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.utils.procrustes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.random_split">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">random_split</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">total</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">15000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cnt_test</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">9000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cnt_train</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4500</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'cuda'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.utils.random_split" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.rdpm">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">rdpm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">total</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cnt</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.utils.rdpm" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.rebuild_with_indices">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">rebuild_with_indices</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sp</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.utils.rebuild_with_indices" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.remain_topk_sim">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">remain_topk_sim</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">matrix</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">k</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1500</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">split</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.utils.remain_topk_sim" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.resize_sparse">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">resize_sparse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ind_shift</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.utils.resize_sparse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.save_similarity_matrix">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">save_similarity_matrix</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sparse</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.utils.save_similarity_matrix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.save_vectors">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">save_vectors</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">words</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.utils.save_vectors" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.scatter_op">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">scatter_op</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tensor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">op</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'sum'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.utils.scatter_op" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.seperate_index_type">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">seperate_index_type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">graph</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.utils.seperate_index_type" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.set_seed">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">set_seed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">seed</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.utils.set_seed" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.sparse_argmax">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">sparse_argmax</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scatter_dim</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.utils.sparse_argmax" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.sparse_argmin">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">sparse_argmin</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scatter_dim</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.utils.sparse_argmin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.sparse_dense_element_wise_op">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">sparse_dense_element_wise_op</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sparse:</span> <span class="pre">~torch.Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dense:</span> <span class="pre">~torch.Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">op=&lt;built-in</span> <span class="pre">method</span> <span class="pre">mul</span> <span class="pre">of</span> <span class="pre">type</span> <span class="pre">object&gt;</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.utils.sparse_dense_element_wise_op" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.sparse_max">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">sparse_max</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tensor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.utils.sparse_max" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.sparse_min">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">sparse_min</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tensor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.utils.sparse_min" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.sparse_minmax">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">sparse_minmax</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1e-08</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">in_place</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tensor</span></span></span><a class="headerlink" href="#matchbench.utils.utils.sparse_minmax" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.sparse_softmax">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">sparse_softmax</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.utils.sparse_softmax" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.split_sp">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">split_sp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sp</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.utils.split_sp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.spmm">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">spmm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">d</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tensor</span></span></span><a class="headerlink" href="#matchbench.utils.utils.spmm" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.spmm_ds">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">spmm_ds</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">d</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">s</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tensor</span></span></span><a class="headerlink" href="#matchbench.utils.utils.spmm_ds" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.spmm_sd">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">spmm_sd</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">d</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tensor</span></span></span><a class="headerlink" href="#matchbench.utils.utils.spmm_sd" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.spspmm">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">spspmm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">separate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.utils.spspmm" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.to_dense">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">to_dense</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.utils.to_dense" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.to_tensor">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">to_tensor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">device</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dtype</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.utils.to_tensor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.to_torch_sparse">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">to_torch_sparse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">matrix</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dtype=&lt;class</span> <span class="pre">'float'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device='cuda'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.utils.to_torch_sparse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.topk2spmat">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">topk2spmat</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">val0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ind0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">device</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'cuda'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">split</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.utils.topk2spmat" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.update_time_logs">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">update_time_logs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">action</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.utils.update_time_logs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.view2">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">view2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.utils.view2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.view3">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">view3</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tensor</span></span></span><a class="headerlink" href="#matchbench.utils.utils.view3" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.view_back">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">view_back</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">M</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.utils.view_back" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.utils.utils.z_score">
+<span class="sig-prename descclassname"><span class="pre">matchbench.utils.utils.</span></span><span class="sig-name descname"><span class="pre">z_score</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">embed</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.utils.utils.z_score" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-matchbench.utils">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-matchbench.utils" title="Permalink to this heading">¶</a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="matchbench.trainer.html" class="btn btn-neutral" title="matchbench.trainer package" accesskey="p">← Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2023, MatchBench group.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE: 'true'
+        };
+    </script>
+      <script type="text/javascript" src="_static/documentation_options.js"></script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/sphinx_highlight.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

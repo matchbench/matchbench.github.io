@@ -1,0 +1,672 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>matchbench.trainer package &mdash; MatchBench  documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="MatchBench  documentation" href="index.html"/>
+        <link rel="up" title="matchbench package" href="matchbench.html"/>
+        <link rel="next" title="matchbench.utils package" href="matchbench.utils.html"/>
+        <link rel="prev" title="matchbench.pair_gen package" href="matchbench.pair_gen.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> MatchBench
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="md_file/Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="md_file/GettingStarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="md_file/UserGuides.html">User Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="md_file/DeveloperGuides.html">Developer Guides</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">matchbench</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="matchbench.html">matchbench package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="matchbench.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="matchbench.dataset.html">matchbench.dataset package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.evaluator.html">matchbench.evaluator package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.html">matchbench.model package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.pair_gen.html">matchbench.pair_gen package</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">matchbench.trainer package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.utils.html">matchbench.utils package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.html#module-matchbench">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">MatchBench</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">matchbench</a> &raquo;</li>
+        
+          <li><a href="matchbench.html">matchbench package</a> &raquo;</li>
+        
+      <li>matchbench.trainer package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/matchbench.trainer.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <section id="matchbench-trainer-package">
+<h1>matchbench.trainer package<a class="headerlink" href="#matchbench-trainer-package" title="Permalink to this heading">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="module-matchbench.trainer.base_trainer">
+<span id="matchbench-trainer-base-trainer-module"></span><h2>matchbench.trainer.base_trainer module<a class="headerlink" href="#module-matchbench.trainer.base_trainer" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="matchbench.trainer.base_trainer.EmbeddingTrainer">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">matchbench.trainer.base_trainer.</span></span><span class="sig-name descname"><span class="pre">EmbeddingTrainer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dimensions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">300</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">window_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">training_algorithm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'word2vec'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">learning_method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'skipgram'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">workers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">16</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sampling_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.001</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.trainer.base_trainer.EmbeddingTrainer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#matchbench.trainer.base_trainer.Trainer" title="matchbench.trainer.base_trainer.Trainer"><code class="xref py py-class docutils literal notranslate"><span class="pre">Trainer</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.trainer.base_trainer.EmbeddingTrainer.train">
+<span class="sig-name descname"><span class="pre">train</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.trainer.base_trainer.EmbeddingTrainer.train" title="Permalink to this definition">¶</a></dt>
+<dd><p>Train.
+:returns: best valid score.</p>
+<blockquote>
+<div><p><cite>nn.Module</cite>: best valid model.</p>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><cite>float</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="matchbench.trainer.base_trainer.Trainer">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">matchbench.trainer.base_trainer.</span></span><span class="sig-name descname"><span class="pre">Trainer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">train_dataset</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">valid_dataset</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">optimizer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scheduler</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scaler</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.trainer.base_trainer.Trainer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The whole process of training.
+Class attributes:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>model</strong> (<cite>nn.Module</cite>) – The model to be trained.</p></li>
+<li><p><strong>args</strong> (<cite>TrainingArguments</cite>) – Hyper parameters when training.
+For more details, please check the <cite>TrainingArguments</cite> class.</p></li>
+<li><p><strong>train_dataset</strong> (<cite>datasets.arrow_dataset.Dataset</cite>) – Training dataset.</p></li>
+<li><p><strong>valid_dataset</strong> (<cite>datasets.arrow_dataset.Dataset</cite>) – Valid dataset.</p></li>
+<li><p><strong>optimizer</strong> (<cite>torch.optimizer</cite>) – The optimizer, defaults to AdamW.</p></li>
+</ul>
+</div></blockquote>
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.trainer.base_trainer.Trainer.train">
+<span class="sig-name descname"><span class="pre">train</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.trainer.base_trainer.Trainer.train" title="Permalink to this definition">¶</a></dt>
+<dd><p>Train.
+:returns: best valid score.</p>
+<blockquote>
+<div><p><cite>nn.Module</cite>: best valid model.</p>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><cite>float</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="matchbench.trainer.base_trainer.TrainingContainer">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">matchbench.trainer.base_trainer.</span></span><span class="sig-name descname"><span class="pre">TrainingContainer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">optimizer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.trainer.base_trainer.TrainingContainer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The whole process of training.
+Class attributes:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>model</strong> (<cite>nn.Module</cite>) – Model in every split</p></li>
+<li><p><strong>args</strong> (<cite>TrainingArguments</cite>) – Hyper parameters when training the specific model, List.
+For more details, please check the <cite>TrainingArguments</cite> class.</p></li>
+<li><p><strong>optimizer</strong> (<cite>torch.optimizer</cite>) – The optimizer, defaults to AdamW, List.</p></li>
+</ul>
+</div></blockquote>
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.trainer.base_trainer.TrainingContainer.train">
+<span class="sig-name descname"><span class="pre">train</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">save_func</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.trainer.base_trainer.TrainingContainer.train" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="matchbench.trainer.base_trainer.TwoStageTrainer">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">matchbench.trainer.base_trainer.</span></span><span class="sig-name descname"><span class="pre">TwoStageTrainer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">train_dataset</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">valid_dataset</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">optimizer_1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">optimizer_2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.trainer.base_trainer.TwoStageTrainer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#matchbench.trainer.base_trainer.Trainer" title="matchbench.trainer.base_trainer.Trainer"><code class="xref py py-class docutils literal notranslate"><span class="pre">Trainer</span></code></a></p>
+<p>For some EA tasks, the training process is splitted into two parts.
+Class attributes (In addition to <cite>Trainer</cite>)</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>optimizer_2</strong> (<cite>torch.optimizer</cite>) – The optimizer in the second step, defaults to Adam.</p></li>
+</ul>
+</div></blockquote>
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.trainer.base_trainer.TwoStageTrainer.train">
+<span class="sig-name descname"><span class="pre">train</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.trainer.base_trainer.TwoStageTrainer.train" title="Permalink to this definition">¶</a></dt>
+<dd><p>Train.
+:returns: best valid score.</p>
+<blockquote>
+<div><p><cite>nn.Module</cite>: best valid model.</p>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><cite>float</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="matchbench.trainer.base_trainer.WarmupTrainer">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">matchbench.trainer.base_trainer.</span></span><span class="sig-name descname"><span class="pre">WarmupTrainer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">train_dataset</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">valid_dataset</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">policy</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">warmup</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.trainer.base_trainer.WarmupTrainer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#matchbench.trainer.base_trainer.Trainer" title="matchbench.trainer.base_trainer.Trainer"><code class="xref py py-class docutils literal notranslate"><span class="pre">Trainer</span></code></a></p>
+<p>The whole process of warmup training.</p>
+<dl class="simple">
+<dt>Class attributes:</dt><dd><ul class="simple">
+<li><p><strong>model</strong> (<cite>nn.Module</cite>) – The model to be trained.</p></li>
+<li><p><strong>args</strong> (<cite>TrainingArguments</cite>) – Hyper parameters when training.
+For more details, please check the <cite>TrainingArguments</cite> class.</p></li>
+<li><p><strong>train_dataset</strong> (<cite>datasets.arrow_dataset.Dataset</cite>) – Training dataset.</p></li>
+<li><p><strong>valid_dataset</strong> (<cite>datasets.arrow_dataset.Dataset</cite>) – Valid dataset.</p></li>
+<li><p><strong>policy</strong> (<cite>AugmentPolicyNetV4</cite>) – Augment policy model for <cite>Rotom</cite>.</p></li>
+<li><p><strong>warmup</strong> (<cite>bool</cite>) – If warm up the model by training it on labeled data or not.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.trainer.base_trainer.WarmupTrainer.auto_mixda">
+<span class="sig-name descname"><span class="pre">auto_mixda</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">policy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">get_ind</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">no_ssl</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.trainer.base_trainer.WarmupTrainer.auto_mixda" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perform one iteration of MixDA
+:param model: The model state.
+:type model: <cite>Rotom</cite>
+:param batch: The input batch.
+:type batch: <cite>tuple</cite>
+:param policy: The augmentation policy.
+:type policy: <cite>AugmentPolicyNetV4</cite>, <em>optional</em></p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The loss (of 0-d).</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><cite>Tensor</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.trainer.base_trainer.WarmupTrainer.sharpen">
+<span class="sig-name descname"><span class="pre">sharpen</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">logits</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">T</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.trainer.base_trainer.WarmupTrainer.sharpen" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sharpen a label probability distribution (make closer to onehot)
+:param logits: the input probability
+:type logits: Tensor</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>the sharpened tensor</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Tensor</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.trainer.base_trainer.WarmupTrainer.train">
+<span class="sig-name descname"><span class="pre">train</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.trainer.base_trainer.WarmupTrainer.train" title="Permalink to this definition">¶</a></dt>
+<dd><p>Train.
+:returns: best valid score.</p>
+<blockquote>
+<div><p><cite>nn.Module</cite>: best valid model.</p>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><cite>float</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.trainer.base_trainer.WarmupTrainer.train_baseline_epoch">
+<span class="sig-name descname"><span class="pre">train_baseline_epoch</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.trainer.base_trainer.WarmupTrainer.train_baseline_epoch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perfrom one epoch of the training process when warm up.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-matchbench.trainer.training_arguments">
+<span id="matchbench-trainer-training-arguments-module"></span><h2>matchbench.trainer.training_arguments module<a class="headerlink" href="#module-matchbench.trainer.training_arguments" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="matchbench.trainer.training_arguments.TrainingArgument">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">matchbench.trainer.training_arguments.</span></span><span class="sig-name descname"><span class="pre">TrainingArgument</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">output_dir:</span> <span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overwrite_output_dir:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">do_train:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">do_eval:</span> <span class="pre">~typing.Optional[bool]</span> <span class="pre">=</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">do_predict:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">evaluation_strategy:</span> <span class="pre">~transformers.trainer_utils.IntervalStrategy</span> <span class="pre">=</span> <span class="pre">'no'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prediction_loss_only:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">per_device_train_batch_size:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">8</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">per_device_eval_batch_size:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">8</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">per_gpu_train_batch_size:</span> <span class="pre">~typing.Optional[int]</span> <span class="pre">=</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">per_gpu_eval_batch_size:</span> <span class="pre">~typing.Optional[int]</span> <span class="pre">=</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gradient_accumulation_steps:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eval_accumulation_steps:</span> <span class="pre">~typing.Optional[int]</span> <span class="pre">=</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">learning_rate:</span> <span class="pre">float</span> <span class="pre">=</span> <span class="pre">5e-05</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weight_decay:</span> <span class="pre">float</span> <span class="pre">=</span> <span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">adam_beta1:</span> <span class="pre">float</span> <span class="pre">=</span> <span class="pre">0.9</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">adam_beta2:</span> <span class="pre">float</span> <span class="pre">=</span> <span class="pre">0.999</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">adam_epsilon:</span> <span class="pre">float</span> <span class="pre">=</span> <span class="pre">1e-08</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_grad_norm:</span> <span class="pre">float</span> <span class="pre">=</span> <span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_train_epochs:</span> <span class="pre">float</span> <span class="pre">=</span> <span class="pre">3.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_steps:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">-1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lr_scheduler_type:</span> <span class="pre">~transformers.trainer_utils.SchedulerType</span> <span class="pre">=</span> <span class="pre">'linear'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">warmup_ratio:</span> <span class="pre">float</span> <span class="pre">=</span> <span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">warmup_steps:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logging_dir:</span> <span class="pre">~typing.Optional[str]</span> <span class="pre">=</span> <span class="pre">&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logging_strategy:</span> <span class="pre">~transformers.trainer_utils.IntervalStrategy</span> <span class="pre">=</span> <span class="pre">'steps'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logging_first_step:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logging_steps:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">500</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">save_strategy:</span> <span class="pre">~transformers.trainer_utils.IntervalStrategy</span> <span class="pre">=</span> <span class="pre">'steps'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">save_steps:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">500</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">save_total_limit:</span> <span class="pre">~typing.Optional[int]</span> <span class="pre">=</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">no_cuda:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seed:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">42</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fp16:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fp16_opt_level:</span> <span class="pre">str</span> <span class="pre">=</span> <span class="pre">'O1'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fp16_backend:</span> <span class="pre">str</span> <span class="pre">=</span> <span class="pre">'auto'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fp16_full_eval:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">local_rank:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">-1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tpu_num_cores:</span> <span class="pre">~typing.Optional[int]</span> <span class="pre">=</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tpu_metrics_debug:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">debug:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataloader_drop_last:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eval_steps:</span> <span class="pre">~typing.Optional[int]</span> <span class="pre">=</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataloader_num_workers:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">past_index:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">-1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">run_name:</span> <span class="pre">~typing.Optional[str]</span> <span class="pre">=</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">disable_tqdm:</span> <span class="pre">~typing.Optional[bool]</span> <span class="pre">=</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">remove_unused_columns:</span> <span class="pre">~typing.Optional[bool]</span> <span class="pre">=</span> <span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_names:</span> <span class="pre">~typing.Optional[~typing.List[str]]</span> <span class="pre">=</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">load_best_model_at_end:</span> <span class="pre">~typing.Optional[bool]</span> <span class="pre">=</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">metric_for_best_model:</span> <span class="pre">~typing.Optional[str]</span> <span class="pre">=</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">greater_is_better:</span> <span class="pre">~typing.Optional[bool]</span> <span class="pre">=</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ignore_data_skip:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sharded_ddp:</span> <span class="pre">str</span> <span class="pre">=</span> <span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">deepspeed:</span> <span class="pre">~typing.Optional[str]</span> <span class="pre">=</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_smoothing_factor:</span> <span class="pre">float</span> <span class="pre">=</span> <span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">adafactor:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">group_by_length:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">length_column_name:</span> <span class="pre">~typing.Optional[str]</span> <span class="pre">=</span> <span class="pre">'length'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">report_to:</span> <span class="pre">~typing.Optional[~typing.List[str]]</span> <span class="pre">=</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ddp_find_unused_parameters:</span> <span class="pre">~typing.Optional[bool]</span> <span class="pre">=</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataloader_pin_memory:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skip_memory_metrics:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mp_parameters:</span> <span class="pre">str</span> <span class="pre">=</span> <span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device:</span> <span class="pre">~torch.device</span> <span class="pre">=</span> <span class="pre">device(type='cuda')</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">train_batch_size:</span> <span class="pre">~typing.Optional[int]</span> <span class="pre">=</span> <span class="pre">32</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_batch_size:</span> <span class="pre">~typing.Optional[int]</span> <span class="pre">=</span> <span class="pre">128</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">train_batch_size_after_negsamp:</span> <span class="pre">~typing.Optional[int]</span> <span class="pre">=</span> <span class="pre">24</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log_step:</span> <span class="pre">~typing.Optional[int]</span> <span class="pre">=</span> <span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eval_epoch:</span> <span class="pre">~typing.Optional[int]</span> <span class="pre">=</span> <span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clip_grad:</span> <span class="pre">~typing.Optional[int]</span> <span class="pre">=</span> <span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_optimizer_grouped_parameters:</span> <span class="pre">~typing.Optional[bool]</span> <span class="pre">=</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">save_epochs:</span> <span class="pre">~typing.Optional[int]</span> <span class="pre">=</span> <span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">save:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fp:</span> <span class="pre">~typing.Optional[bool]</span> <span class="pre">=</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_dm_optimizer:</span> <span class="pre">~typing.Optional[bool]</span> <span class="pre">=</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lr_scheduler:</span> <span class="pre">~typing.Optional[bool]</span> <span class="pre">=</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">aug_in_batch:</span> <span class="pre">~typing.Optional[bool]</span> <span class="pre">=</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mid_file_dir:</span> <span class="pre">~typing.Optional[str]</span> <span class="pre">=</span> <span class="pre">'middle_file/'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataset_name:</span> <span class="pre">str</span> <span class="pre">=</span> <span class="pre">'dataset_name'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.trainer.training_arguments.TrainingArgument" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TrainingArguments</span></code></p>
+<p>As the supplement of the transformers.TrainingArguments,
+storing all the training hyper parameters,.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.trainer.training_arguments.TrainingArgument.aug_in_batch">
+<span class="sig-name descname"><span class="pre">aug_in_batch</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><span class="pre">bool</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#matchbench.trainer.training_arguments.TrainingArgument.aug_in_batch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.trainer.training_arguments.TrainingArgument.clip_grad">
+<span class="sig-name descname"><span class="pre">clip_grad</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#matchbench.trainer.training_arguments.TrainingArgument.clip_grad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.trainer.training_arguments.TrainingArgument.dataset_name">
+<span class="sig-name descname"><span class="pre">dataset_name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'dataset_name'</span></em><a class="headerlink" href="#matchbench.trainer.training_arguments.TrainingArgument.dataset_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.trainer.training_arguments.TrainingArgument.device">
+<span class="sig-name descname"><span class="pre">device</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">device</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">device(type='cuda')</span></em><a class="headerlink" href="#matchbench.trainer.training_arguments.TrainingArgument.device" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.trainer.training_arguments.TrainingArgument.eval_epoch">
+<span class="sig-name descname"><span class="pre">eval_epoch</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#matchbench.trainer.training_arguments.TrainingArgument.eval_epoch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.trainer.training_arguments.TrainingArgument.fp">
+<span class="sig-name descname"><span class="pre">fp</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><span class="pre">bool</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#matchbench.trainer.training_arguments.TrainingArgument.fp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.trainer.training_arguments.TrainingArgument.log_step">
+<span class="sig-name descname"><span class="pre">log_step</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">10</span></em><a class="headerlink" href="#matchbench.trainer.training_arguments.TrainingArgument.log_step" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.trainer.training_arguments.TrainingArgument.lr_scheduler">
+<span class="sig-name descname"><span class="pre">lr_scheduler</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><span class="pre">bool</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#matchbench.trainer.training_arguments.TrainingArgument.lr_scheduler" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.trainer.training_arguments.TrainingArgument.mid_file_dir">
+<span class="sig-name descname"><span class="pre">mid_file_dir</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'middle_file/'</span></em><a class="headerlink" href="#matchbench.trainer.training_arguments.TrainingArgument.mid_file_dir" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.trainer.training_arguments.TrainingArgument.save">
+<span class="sig-name descname"><span class="pre">save</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><span class="pre">bool</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">True</span></em><a class="headerlink" href="#matchbench.trainer.training_arguments.TrainingArgument.save" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.trainer.training_arguments.TrainingArgument.save_epochs">
+<span class="sig-name descname"><span class="pre">save_epochs</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#matchbench.trainer.training_arguments.TrainingArgument.save_epochs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.trainer.training_arguments.TrainingArgument.test_batch_size">
+<span class="sig-name descname"><span class="pre">test_batch_size</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">128</span></em><a class="headerlink" href="#matchbench.trainer.training_arguments.TrainingArgument.test_batch_size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.trainer.training_arguments.TrainingArgument.train_batch_size">
+<span class="sig-name descname"><span class="pre">train_batch_size</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">32</span></em><a class="headerlink" href="#matchbench.trainer.training_arguments.TrainingArgument.train_batch_size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.trainer.training_arguments.TrainingArgument.train_batch_size_after_negsamp">
+<span class="sig-name descname"><span class="pre">train_batch_size_after_negsamp</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">24</span></em><a class="headerlink" href="#matchbench.trainer.training_arguments.TrainingArgument.train_batch_size_after_negsamp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.trainer.training_arguments.TrainingArgument.use_dm_optimizer">
+<span class="sig-name descname"><span class="pre">use_dm_optimizer</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><span class="pre">bool</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#matchbench.trainer.training_arguments.TrainingArgument.use_dm_optimizer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.trainer.training_arguments.TrainingArgument.use_optimizer_grouped_parameters">
+<span class="sig-name descname"><span class="pre">use_optimizer_grouped_parameters</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><span class="pre">bool</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#matchbench.trainer.training_arguments.TrainingArgument.use_optimizer_grouped_parameters" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="matchbench.trainer.training_arguments.TwoStageTrainingArgument">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">matchbench.trainer.training_arguments.</span></span><span class="sig-name descname"><span class="pre">TwoStageTrainingArgument</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">output_dir:</span> <span class="pre">str,</span> <span class="pre">overwrite_output_dir:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False,</span> <span class="pre">do_train:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False,</span> <span class="pre">do_eval:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">do_predict:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False,</span> <span class="pre">evaluation_strategy:</span> <span class="pre">transformers.trainer_utils.IntervalStrategy</span> <span class="pre">=</span> <span class="pre">'no',</span> <span class="pre">prediction_loss_only:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False,</span> <span class="pre">per_device_train_batch_size:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">8,</span> <span class="pre">per_device_eval_batch_size:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">8,</span> <span class="pre">per_gpu_train_batch_size:</span> <span class="pre">Union[int,</span> <span class="pre">NoneType]</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">per_gpu_eval_batch_size:</span> <span class="pre">Union[int,</span> <span class="pre">NoneType]</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">gradient_accumulation_steps:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">1,</span> <span class="pre">eval_accumulation_steps:</span> <span class="pre">Union[int,</span> <span class="pre">NoneType]</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">learning_rate:</span> <span class="pre">float</span> <span class="pre">=</span> <span class="pre">5e-05,</span> <span class="pre">weight_decay:</span> <span class="pre">float</span> <span class="pre">=</span> <span class="pre">0.0,</span> <span class="pre">adam_beta1:</span> <span class="pre">float</span> <span class="pre">=</span> <span class="pre">0.9,</span> <span class="pre">adam_beta2:</span> <span class="pre">float</span> <span class="pre">=</span> <span class="pre">0.999,</span> <span class="pre">adam_epsilon:</span> <span class="pre">float</span> <span class="pre">=</span> <span class="pre">1e-08,</span> <span class="pre">max_grad_norm:</span> <span class="pre">float</span> <span class="pre">=</span> <span class="pre">1.0,</span> <span class="pre">num_train_epochs:</span> <span class="pre">float</span> <span class="pre">=</span> <span class="pre">3.0,</span> <span class="pre">max_steps:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">-1,</span> <span class="pre">lr_scheduler_type:</span> <span class="pre">transformers.trainer_utils.SchedulerType</span> <span class="pre">=</span> <span class="pre">'linear',</span> <span class="pre">warmup_ratio:</span> <span class="pre">float</span> <span class="pre">=</span> <span class="pre">0.0,</span> <span class="pre">warmup_steps:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">0,</span> <span class="pre">logging_dir:</span> <span class="pre">Union[str,</span> <span class="pre">NoneType]</span> <span class="pre">=</span> <span class="pre">&lt;factory&gt;,</span> <span class="pre">logging_strategy:</span> <span class="pre">transformers.trainer_utils.IntervalStrategy</span> <span class="pre">=</span> <span class="pre">'steps',</span> <span class="pre">logging_first_step:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False,</span> <span class="pre">logging_steps:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">500,</span> <span class="pre">save_strategy:</span> <span class="pre">transformers.trainer_utils.IntervalStrategy</span> <span class="pre">=</span> <span class="pre">'steps',</span> <span class="pre">save_steps:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">500,</span> <span class="pre">save_total_limit:</span> <span class="pre">Union[int,</span> <span class="pre">NoneType]</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">no_cuda:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False,</span> <span class="pre">seed:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">42,</span> <span class="pre">fp16:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False,</span> <span class="pre">fp16_opt_level:</span> <span class="pre">str</span> <span class="pre">=</span> <span class="pre">'O1',</span> <span class="pre">fp16_backend:</span> <span class="pre">str</span> <span class="pre">=</span> <span class="pre">'auto',</span> <span class="pre">fp16_full_eval:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False,</span> <span class="pre">local_rank:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">-1,</span> <span class="pre">tpu_num_cores:</span> <span class="pre">Union[int,</span> <span class="pre">NoneType]</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">tpu_metrics_debug:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False,</span> <span class="pre">debug:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False,</span> <span class="pre">dataloader_drop_last:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False,</span> <span class="pre">eval_steps:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">dataloader_num_workers:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">0,</span> <span class="pre">past_index:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">-1,</span> <span class="pre">run_name:</span> <span class="pre">Union[str,</span> <span class="pre">NoneType]</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">disable_tqdm:</span> <span class="pre">Union[bool,</span> <span class="pre">NoneType]</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">remove_unused_columns:</span> <span class="pre">Union[bool,</span> <span class="pre">NoneType]</span> <span class="pre">=</span> <span class="pre">True,</span> <span class="pre">label_names:</span> <span class="pre">Union[List[str],</span> <span class="pre">NoneType]</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">load_best_model_at_end:</span> <span class="pre">Union[bool,</span> <span class="pre">NoneType]</span> <span class="pre">=</span> <span class="pre">False,</span> <span class="pre">metric_for_best_model:</span> <span class="pre">Union[str,</span> <span class="pre">NoneType]</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">greater_is_better:</span> <span class="pre">Union[bool,</span> <span class="pre">NoneType]</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">ignore_data_skip:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False,</span> <span class="pre">sharded_ddp:</span> <span class="pre">str</span> <span class="pre">=</span> <span class="pre">'',</span> <span class="pre">deepspeed:</span> <span class="pre">Union[str,</span> <span class="pre">NoneType]</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">label_smoothing_factor:</span> <span class="pre">float</span> <span class="pre">=</span> <span class="pre">0.0,</span> <span class="pre">adafactor:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False,</span> <span class="pre">group_by_length:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False,</span> <span class="pre">length_column_name:</span> <span class="pre">Union[str,</span> <span class="pre">NoneType]</span> <span class="pre">=</span> <span class="pre">'length',</span> <span class="pre">report_to:</span> <span class="pre">Union[List[str],</span> <span class="pre">NoneType]</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">ddp_find_unused_parameters:</span> <span class="pre">Union[bool,</span> <span class="pre">NoneType]</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">dataloader_pin_memory:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">True,</span> <span class="pre">skip_memory_metrics:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False,</span> <span class="pre">mp_parameters:</span> <span class="pre">str</span> <span class="pre">=</span> <span class="pre">'',</span> <span class="pre">device:</span> <span class="pre">torch.device</span> <span class="pre">=</span> <span class="pre">device(type='cuda'),</span> <span class="pre">train_batch_size:</span> <span class="pre">Union[int,</span> <span class="pre">NoneType]</span> <span class="pre">=</span> <span class="pre">32,</span> <span class="pre">test_batch_size:</span> <span class="pre">Union[int,</span> <span class="pre">NoneType]</span> <span class="pre">=</span> <span class="pre">128,</span> <span class="pre">train_batch_size_after_negsamp:</span> <span class="pre">Union[int,</span> <span class="pre">NoneType]</span> <span class="pre">=</span> <span class="pre">24,</span> <span class="pre">log_step:</span> <span class="pre">Union[int,</span> <span class="pre">NoneType]</span> <span class="pre">=</span> <span class="pre">10,</span> <span class="pre">eval_epoch:</span> <span class="pre">Union[int,</span> <span class="pre">NoneType]</span> <span class="pre">=</span> <span class="pre">1,</span> <span class="pre">clip_grad:</span> <span class="pre">Union[int,</span> <span class="pre">NoneType]</span> <span class="pre">=</span> <span class="pre">0,</span> <span class="pre">use_optimizer_grouped_parameters:</span> <span class="pre">Union[bool,</span> <span class="pre">NoneType]</span> <span class="pre">=</span> <span class="pre">False,</span> <span class="pre">save_epochs:</span> <span class="pre">Union[int,</span> <span class="pre">NoneType]</span> <span class="pre">=</span> <span class="pre">1,</span> <span class="pre">save:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">True,</span> <span class="pre">fp:</span> <span class="pre">Union[bool,</span> <span class="pre">NoneType]</span> <span class="pre">=</span> <span class="pre">False,</span> <span class="pre">use_dm_optimizer:</span> <span class="pre">Union[bool,</span> <span class="pre">NoneType]</span> <span class="pre">=</span> <span class="pre">False,</span> <span class="pre">lr_scheduler:</span> <span class="pre">Union[bool,</span> <span class="pre">NoneType]</span> <span class="pre">=</span> <span class="pre">False,</span> <span class="pre">aug_in_batch:</span> <span class="pre">Union[bool,</span> <span class="pre">NoneType]</span> <span class="pre">=</span> <span class="pre">False,</span> <span class="pre">mid_file_dir:</span> <span class="pre">Union[str,</span> <span class="pre">NoneType]</span> <span class="pre">=</span> <span class="pre">'middle_file/',</span> <span class="pre">dataset_name:</span> <span class="pre">str</span> <span class="pre">=</span> <span class="pre">'dataset_name',</span> <span class="pre">learning_rate_2:</span> <span class="pre">Union[float,</span> <span class="pre">NoneType]</span> <span class="pre">=</span> <span class="pre">0.0005,</span> <span class="pre">weight_decay_2:</span> <span class="pre">Union[float,</span> <span class="pre">NoneType]</span> <span class="pre">=</span> <span class="pre">0.0005,</span> <span class="pre">first_stage_model_path:</span> <span class="pre">Union[str,</span> <span class="pre">NoneType]</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">num_train_epochs_2:</span> <span class="pre">Union[int,</span> <span class="pre">NoneType]</span> <span class="pre">=</span> <span class="pre">5,</span> <span class="pre">eval_epoch_2:</span> <span class="pre">Union[int,</span> <span class="pre">NoneType]</span> <span class="pre">=</span> <span class="pre">10,</span> <span class="pre">train_batch_size_2:</span> <span class="pre">Union[int,</span> <span class="pre">NoneType]</span> <span class="pre">=</span> <span class="pre">128,</span> <span class="pre">test_batch_size_2:</span> <span class="pre">Union[int,</span> <span class="pre">NoneType]</span> <span class="pre">=</span> <span class="pre">2048,</span> <span class="pre">train_batch_size_after_negsamp_2:</span> <span class="pre">Union[int,</span> <span class="pre">NoneType]</span> <span class="pre">=</span> <span class="pre">256</span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.trainer.training_arguments.TwoStageTrainingArgument" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#matchbench.trainer.training_arguments.TrainingArgument" title="matchbench.trainer.training_arguments.TrainingArgument"><code class="xref py py-class docutils literal notranslate"><span class="pre">TrainingArgument</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.trainer.training_arguments.TwoStageTrainingArgument.eval_epoch_2">
+<span class="sig-name descname"><span class="pre">eval_epoch_2</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">10</span></em><a class="headerlink" href="#matchbench.trainer.training_arguments.TwoStageTrainingArgument.eval_epoch_2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.trainer.training_arguments.TwoStageTrainingArgument.first_stage_model_path">
+<span class="sig-name descname"><span class="pre">first_stage_model_path</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#matchbench.trainer.training_arguments.TwoStageTrainingArgument.first_stage_model_path" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.trainer.training_arguments.TwoStageTrainingArgument.learning_rate_2">
+<span class="sig-name descname"><span class="pre">learning_rate_2</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.0005</span></em><a class="headerlink" href="#matchbench.trainer.training_arguments.TwoStageTrainingArgument.learning_rate_2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.trainer.training_arguments.TwoStageTrainingArgument.num_train_epochs_2">
+<span class="sig-name descname"><span class="pre">num_train_epochs_2</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">5</span></em><a class="headerlink" href="#matchbench.trainer.training_arguments.TwoStageTrainingArgument.num_train_epochs_2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.trainer.training_arguments.TwoStageTrainingArgument.test_batch_size_2">
+<span class="sig-name descname"><span class="pre">test_batch_size_2</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2048</span></em><a class="headerlink" href="#matchbench.trainer.training_arguments.TwoStageTrainingArgument.test_batch_size_2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.trainer.training_arguments.TwoStageTrainingArgument.train_batch_size_2">
+<span class="sig-name descname"><span class="pre">train_batch_size_2</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">128</span></em><a class="headerlink" href="#matchbench.trainer.training_arguments.TwoStageTrainingArgument.train_batch_size_2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.trainer.training_arguments.TwoStageTrainingArgument.train_batch_size_after_negsamp_2">
+<span class="sig-name descname"><span class="pre">train_batch_size_after_negsamp_2</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">256</span></em><a class="headerlink" href="#matchbench.trainer.training_arguments.TwoStageTrainingArgument.train_batch_size_after_negsamp_2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.trainer.training_arguments.TwoStageTrainingArgument.weight_decay_2">
+<span class="sig-name descname"><span class="pre">weight_decay_2</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.0005</span></em><a class="headerlink" href="#matchbench.trainer.training_arguments.TwoStageTrainingArgument.weight_decay_2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-matchbench.trainer">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-matchbench.trainer" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="matchbench.trainer.TrainingArgument">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">matchbench.trainer.</span></span><span class="sig-name descname"><span class="pre">TrainingArgument</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">output_dir:</span> <span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overwrite_output_dir:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">do_train:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">do_eval:</span> <span class="pre">~typing.Optional[bool]</span> <span class="pre">=</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">do_predict:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">evaluation_strategy:</span> <span class="pre">~transformers.trainer_utils.IntervalStrategy</span> <span class="pre">=</span> <span class="pre">'no'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prediction_loss_only:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">per_device_train_batch_size:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">8</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">per_device_eval_batch_size:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">8</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">per_gpu_train_batch_size:</span> <span class="pre">~typing.Optional[int]</span> <span class="pre">=</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">per_gpu_eval_batch_size:</span> <span class="pre">~typing.Optional[int]</span> <span class="pre">=</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gradient_accumulation_steps:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eval_accumulation_steps:</span> <span class="pre">~typing.Optional[int]</span> <span class="pre">=</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">learning_rate:</span> <span class="pre">float</span> <span class="pre">=</span> <span class="pre">5e-05</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weight_decay:</span> <span class="pre">float</span> <span class="pre">=</span> <span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">adam_beta1:</span> <span class="pre">float</span> <span class="pre">=</span> <span class="pre">0.9</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">adam_beta2:</span> <span class="pre">float</span> <span class="pre">=</span> <span class="pre">0.999</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">adam_epsilon:</span> <span class="pre">float</span> <span class="pre">=</span> <span class="pre">1e-08</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_grad_norm:</span> <span class="pre">float</span> <span class="pre">=</span> <span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_train_epochs:</span> <span class="pre">float</span> <span class="pre">=</span> <span class="pre">3.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_steps:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">-1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lr_scheduler_type:</span> <span class="pre">~transformers.trainer_utils.SchedulerType</span> <span class="pre">=</span> <span class="pre">'linear'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">warmup_ratio:</span> <span class="pre">float</span> <span class="pre">=</span> <span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">warmup_steps:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logging_dir:</span> <span class="pre">~typing.Optional[str]</span> <span class="pre">=</span> <span class="pre">&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logging_strategy:</span> <span class="pre">~transformers.trainer_utils.IntervalStrategy</span> <span class="pre">=</span> <span class="pre">'steps'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logging_first_step:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logging_steps:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">500</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">save_strategy:</span> <span class="pre">~transformers.trainer_utils.IntervalStrategy</span> <span class="pre">=</span> <span class="pre">'steps'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">save_steps:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">500</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">save_total_limit:</span> <span class="pre">~typing.Optional[int]</span> <span class="pre">=</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">no_cuda:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seed:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">42</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fp16:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fp16_opt_level:</span> <span class="pre">str</span> <span class="pre">=</span> <span class="pre">'O1'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fp16_backend:</span> <span class="pre">str</span> <span class="pre">=</span> <span class="pre">'auto'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fp16_full_eval:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">local_rank:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">-1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tpu_num_cores:</span> <span class="pre">~typing.Optional[int]</span> <span class="pre">=</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tpu_metrics_debug:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">debug:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataloader_drop_last:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eval_steps:</span> <span class="pre">~typing.Optional[int]</span> <span class="pre">=</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataloader_num_workers:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">past_index:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">-1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">run_name:</span> <span class="pre">~typing.Optional[str]</span> <span class="pre">=</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">disable_tqdm:</span> <span class="pre">~typing.Optional[bool]</span> <span class="pre">=</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">remove_unused_columns:</span> <span class="pre">~typing.Optional[bool]</span> <span class="pre">=</span> <span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_names:</span> <span class="pre">~typing.Optional[~typing.List[str]]</span> <span class="pre">=</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">load_best_model_at_end:</span> <span class="pre">~typing.Optional[bool]</span> <span class="pre">=</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">metric_for_best_model:</span> <span class="pre">~typing.Optional[str]</span> <span class="pre">=</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">greater_is_better:</span> <span class="pre">~typing.Optional[bool]</span> <span class="pre">=</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ignore_data_skip:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sharded_ddp:</span> <span class="pre">str</span> <span class="pre">=</span> <span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">deepspeed:</span> <span class="pre">~typing.Optional[str]</span> <span class="pre">=</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_smoothing_factor:</span> <span class="pre">float</span> <span class="pre">=</span> <span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">adafactor:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">group_by_length:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">length_column_name:</span> <span class="pre">~typing.Optional[str]</span> <span class="pre">=</span> <span class="pre">'length'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">report_to:</span> <span class="pre">~typing.Optional[~typing.List[str]]</span> <span class="pre">=</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ddp_find_unused_parameters:</span> <span class="pre">~typing.Optional[bool]</span> <span class="pre">=</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataloader_pin_memory:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skip_memory_metrics:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mp_parameters:</span> <span class="pre">str</span> <span class="pre">=</span> <span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device:</span> <span class="pre">~torch.device</span> <span class="pre">=</span> <span class="pre">device(type='cuda')</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">train_batch_size:</span> <span class="pre">~typing.Optional[int]</span> <span class="pre">=</span> <span class="pre">32</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_batch_size:</span> <span class="pre">~typing.Optional[int]</span> <span class="pre">=</span> <span class="pre">128</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">train_batch_size_after_negsamp:</span> <span class="pre">~typing.Optional[int]</span> <span class="pre">=</span> <span class="pre">24</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log_step:</span> <span class="pre">~typing.Optional[int]</span> <span class="pre">=</span> <span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eval_epoch:</span> <span class="pre">~typing.Optional[int]</span> <span class="pre">=</span> <span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clip_grad:</span> <span class="pre">~typing.Optional[int]</span> <span class="pre">=</span> <span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_optimizer_grouped_parameters:</span> <span class="pre">~typing.Optional[bool]</span> <span class="pre">=</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">save_epochs:</span> <span class="pre">~typing.Optional[int]</span> <span class="pre">=</span> <span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">save:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fp:</span> <span class="pre">~typing.Optional[bool]</span> <span class="pre">=</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_dm_optimizer:</span> <span class="pre">~typing.Optional[bool]</span> <span class="pre">=</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lr_scheduler:</span> <span class="pre">~typing.Optional[bool]</span> <span class="pre">=</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">aug_in_batch:</span> <span class="pre">~typing.Optional[bool]</span> <span class="pre">=</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mid_file_dir:</span> <span class="pre">~typing.Optional[str]</span> <span class="pre">=</span> <span class="pre">'middle_file/'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataset_name:</span> <span class="pre">str</span> <span class="pre">=</span> <span class="pre">'dataset_name'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.trainer.TrainingArgument" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TrainingArguments</span></code></p>
+<p>As the supplement of the transformers.TrainingArguments,
+storing all the training hyper parameters,.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.trainer.TrainingArgument.aug_in_batch">
+<span class="sig-name descname"><span class="pre">aug_in_batch</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><span class="pre">bool</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#matchbench.trainer.TrainingArgument.aug_in_batch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.trainer.TrainingArgument.clip_grad">
+<span class="sig-name descname"><span class="pre">clip_grad</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#matchbench.trainer.TrainingArgument.clip_grad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.trainer.TrainingArgument.dataset_name">
+<span class="sig-name descname"><span class="pre">dataset_name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'dataset_name'</span></em><a class="headerlink" href="#matchbench.trainer.TrainingArgument.dataset_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.trainer.TrainingArgument.device">
+<span class="sig-name descname"><span class="pre">device</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">device</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">device(type='cuda')</span></em><a class="headerlink" href="#matchbench.trainer.TrainingArgument.device" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.trainer.TrainingArgument.eval_epoch">
+<span class="sig-name descname"><span class="pre">eval_epoch</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#matchbench.trainer.TrainingArgument.eval_epoch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.trainer.TrainingArgument.fp">
+<span class="sig-name descname"><span class="pre">fp</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><span class="pre">bool</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#matchbench.trainer.TrainingArgument.fp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.trainer.TrainingArgument.log_step">
+<span class="sig-name descname"><span class="pre">log_step</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">10</span></em><a class="headerlink" href="#matchbench.trainer.TrainingArgument.log_step" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.trainer.TrainingArgument.logging_dir">
+<span class="sig-name descname"><span class="pre">logging_dir</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#matchbench.trainer.TrainingArgument.logging_dir" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.trainer.TrainingArgument.lr_scheduler">
+<span class="sig-name descname"><span class="pre">lr_scheduler</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><span class="pre">bool</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#matchbench.trainer.TrainingArgument.lr_scheduler" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.trainer.TrainingArgument.mid_file_dir">
+<span class="sig-name descname"><span class="pre">mid_file_dir</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'middle_file/'</span></em><a class="headerlink" href="#matchbench.trainer.TrainingArgument.mid_file_dir" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.trainer.TrainingArgument.output_dir">
+<span class="sig-name descname"><span class="pre">output_dir</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></em><a class="headerlink" href="#matchbench.trainer.TrainingArgument.output_dir" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.trainer.TrainingArgument.save">
+<span class="sig-name descname"><span class="pre">save</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><span class="pre">bool</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">True</span></em><a class="headerlink" href="#matchbench.trainer.TrainingArgument.save" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.trainer.TrainingArgument.save_epochs">
+<span class="sig-name descname"><span class="pre">save_epochs</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#matchbench.trainer.TrainingArgument.save_epochs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.trainer.TrainingArgument.test_batch_size">
+<span class="sig-name descname"><span class="pre">test_batch_size</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">128</span></em><a class="headerlink" href="#matchbench.trainer.TrainingArgument.test_batch_size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.trainer.TrainingArgument.train_batch_size">
+<span class="sig-name descname"><span class="pre">train_batch_size</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">32</span></em><a class="headerlink" href="#matchbench.trainer.TrainingArgument.train_batch_size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.trainer.TrainingArgument.train_batch_size_after_negsamp">
+<span class="sig-name descname"><span class="pre">train_batch_size_after_negsamp</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">24</span></em><a class="headerlink" href="#matchbench.trainer.TrainingArgument.train_batch_size_after_negsamp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.trainer.TrainingArgument.use_dm_optimizer">
+<span class="sig-name descname"><span class="pre">use_dm_optimizer</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><span class="pre">bool</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#matchbench.trainer.TrainingArgument.use_dm_optimizer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matchbench.trainer.TrainingArgument.use_optimizer_grouped_parameters">
+<span class="sig-name descname"><span class="pre">use_optimizer_grouped_parameters</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><span class="pre">bool</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#matchbench.trainer.TrainingArgument.use_optimizer_grouped_parameters" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="matchbench.utils.html" class="btn btn-neutral float-right" title="matchbench.utils package" accesskey="n">Next →</a>
+      
+      
+        <a href="matchbench.pair_gen.html" class="btn btn-neutral" title="matchbench.pair_gen package" accesskey="p">← Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2023, MatchBench group.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE: 'true'
+        };
+    </script>
+      <script type="text/javascript" src="_static/documentation_options.js"></script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/sphinx_highlight.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

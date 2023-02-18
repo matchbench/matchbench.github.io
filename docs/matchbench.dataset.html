@@ -1,0 +1,286 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>matchbench.dataset package &mdash; MatchBench  documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="MatchBench  documentation" href="index.html"/>
+        <link rel="up" title="matchbench package" href="matchbench.html"/>
+        <link rel="next" title="matchbench.evaluator package" href="matchbench.evaluator.html"/>
+        <link rel="prev" title="matchbench package" href="matchbench.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> MatchBench
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="md_file/Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="md_file/GettingStarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="md_file/UserGuides.html">User Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="md_file/DeveloperGuides.html">Developer Guides</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">matchbench</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="matchbench.html">matchbench package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="matchbench.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">matchbench.dataset package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.evaluator.html">matchbench.evaluator package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.html">matchbench.model package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.pair_gen.html">matchbench.pair_gen package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.trainer.html">matchbench.trainer package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.utils.html">matchbench.utils package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.html#module-matchbench">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">MatchBench</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">matchbench</a> &raquo;</li>
+        
+          <li><a href="matchbench.html">matchbench package</a> &raquo;</li>
+        
+      <li>matchbench.dataset package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/matchbench.dataset.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <section id="matchbench-dataset-package">
+<h1>matchbench.dataset package<a class="headerlink" href="#matchbench-dataset-package" title="Permalink to this heading">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="module-matchbench.dataset.load">
+<span id="matchbench-dataset-load-module"></span><h2>matchbench.dataset.load module<a class="headerlink" href="#module-matchbench.dataset.load" title="Permalink to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.dataset.load.list_datasets">
+<span class="sig-prename descclassname"><span class="pre">matchbench.dataset.load.</span></span><span class="sig-name descname"><span class="pre">list_datasets</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.dataset.load.list_datasets" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: List all the datasets.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="matchbench.dataset.load.load_datasets">
+<span class="sig-prename descclassname"><span class="pre">matchbench.dataset.load.</span></span><span class="sig-name descname"><span class="pre">load_datasets</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">list_of_datasets</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">local_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">has_pairs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.dataset.load.load_datasets" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load datasets from the online huggingface repo or the local director.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>list_of_datasets</strong> (<cite>str</cite> or <cite>List</cite>) – The (list of) dataset(s) to be loaded.</p></li>
+<li><p><strong>local_dir</strong> (<cite>str</cite> or <cite>Dict</cite>, <em>optional</em>, defaults to <cite>None</cite>) – The local director path where the dataset(s) stored in.</p></li>
+<li><p><strong>has_pairs</strong> (<cite>Bool</cite>, <em>optional</em>, defaults to <cite>True</cite>) – If the dataset has ground truth or train data pairs or not.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>If inputting only one dataset, return a (pairs, source, target) tuple.
+If inputting a list of datasets, return a tuple list.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(List of) <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.11)">tuple</a>(s)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-matchbench.dataset">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-matchbench.dataset" title="Permalink to this heading">¶</a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="matchbench.evaluator.html" class="btn btn-neutral float-right" title="matchbench.evaluator package" accesskey="n">Next →</a>
+      
+      
+        <a href="matchbench.html" class="btn btn-neutral" title="matchbench package" accesskey="p">← Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2023, MatchBench group.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE: 'true'
+        };
+    </script>
+      <script type="text/javascript" src="_static/documentation_options.js"></script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/sphinx_highlight.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

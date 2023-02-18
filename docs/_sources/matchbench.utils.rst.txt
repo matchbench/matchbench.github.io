@@ -1,0 +1,125 @@
+matchbench.utils package
+========================
+
+Submodules
+----------
+
+matchbench.utils.column\_feature module
+---------------------------------------
+
+.. automodule:: matchbench.utils.column_feature
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+matchbench.utils.dataset module
+-------------------------------
+
+.. automodule:: matchbench.utils.dataset
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+matchbench.utils.dto module
+---------------------------
+
+.. automodule:: matchbench.utils.dto
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+matchbench.utils.emb\_loader module
+-----------------------------------
+
+.. automodule:: matchbench.utils.emb_loader
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+matchbench.utils.eval module
+----------------------------
+
+.. automodule:: matchbench.utils.eval
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+matchbench.utils.file\_tools module
+-----------------------------------
+
+.. automodule:: matchbench.utils.file_tools
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+matchbench.utils.fuse module
+----------------------------
+
+.. automodule:: matchbench.utils.fuse
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+matchbench.utils.load module
+----------------------------
+
+.. automodule:: matchbench.utils.load
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+matchbench.utils.nxmetis module
+-------------------------------
+
+.. automodule:: matchbench.utils.nxmetis
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+matchbench.utils.partition module
+---------------------------------
+
+.. automodule:: matchbench.utils.partition
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+matchbench.utils.sampler module
+-------------------------------
+
+.. automodule:: matchbench.utils.sampler
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+matchbench.utils.text\_sim module
+---------------------------------
+
+.. automodule:: matchbench.utils.text_sim
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+matchbench.utils.text\_utils module
+-----------------------------------
+
+.. automodule:: matchbench.utils.text_utils
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+matchbench.utils.utils module
+-----------------------------
+
+.. automodule:: matchbench.utils.utils
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: matchbench.utils
+   :members:
+   :undoc-members:
+   :show-inheritance:

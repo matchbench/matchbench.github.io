@@ -1,4 +1,4 @@
-## Introduction
+# Introduction
 
 **MatchBench** is a data integration ecosystem of libraries, which includes three main modules: Dataset interface, Integration algorithm, and Training/Evaluating module.
 
