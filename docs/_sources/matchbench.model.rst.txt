@@ -1,0 +1,32 @@
+matchbench.model package
+========================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   matchbench.model.column_type_annotation
+   matchbench.model.entity_alignment
+   matchbench.model.entity_matching
+   matchbench.model.schema_matching
+
+Submodules
+----------
+
+matchbench.model.base\_model module
+-----------------------------------
+
+.. automodule:: matchbench.model.base_model
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: matchbench.model
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,358 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>matchbench.pair_gen package &mdash; MatchBench  documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="MatchBench  documentation" href="index.html"/>
+        <link rel="up" title="matchbench package" href="matchbench.html"/>
+        <link rel="next" title="matchbench.trainer package" href="matchbench.trainer.html"/>
+        <link rel="prev" title="matchbench.model.schema_matching package" href="matchbench.model.schema_matching.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> MatchBench
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="md_file/Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="md_file/GettingStarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="md_file/UserGuides.html">User Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="md_file/DeveloperGuides.html">Developer Guides</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">matchbench</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="matchbench.html">matchbench package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="matchbench.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="matchbench.dataset.html">matchbench.dataset package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.evaluator.html">matchbench.evaluator package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.model.html">matchbench.model package</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">matchbench.pair_gen package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.trainer.html">matchbench.trainer package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="matchbench.utils.html">matchbench.utils package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matchbench.html#module-matchbench">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">MatchBench</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">matchbench</a> &raquo;</li>
+        
+          <li><a href="matchbench.html">matchbench package</a> &raquo;</li>
+        
+      <li>matchbench.pair_gen package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/matchbench.pair_gen.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <section id="matchbench-pair-gen-package">
+<h1>matchbench.pair_gen package<a class="headerlink" href="#matchbench-pair-gen-package" title="Permalink to this heading">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="module-matchbench.pair_gen.blocker">
+<span id="matchbench-pair-gen-blocker-module"></span><h2>matchbench.pair_gen.blocker module<a class="headerlink" href="#module-matchbench.pair_gen.blocker" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="module-matchbench.pair_gen.data_augmenter">
+<span id="matchbench-pair-gen-data-augmenter-module"></span><h2>matchbench.pair_gen.data_augmenter module<a class="headerlink" href="#module-matchbench.pair_gen.data_augmenter" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="matchbench.pair_gen.data_augmenter.Augmenter">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">matchbench.pair_gen.data_augmenter.</span></span><span class="sig-name descname"><span class="pre">Augmenter</span></span><a class="headerlink" href="#matchbench.pair_gen.data_augmenter.Augmenter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Data augmentation operator.
+Support both span and attribute level augmentation operators.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.pair_gen.data_augmenter.Augmenter.augment">
+<span class="sig-name descname"><span class="pre">augment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tokens</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">labels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">op</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'del'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.pair_gen.data_augmenter.Augmenter.augment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Performs data augmentation on a sequence of tokens
+The supported ops:</p>
+<blockquote>
+<div><dl class="simple">
+<dt>[‘del’, ‘drop_col’,</dt><dd><p>‘append_col’, ‘drop_token’,
+‘drop_len’,
+‘drop_sym’,
+‘drop_same’,
+‘swap’,
+‘ins’,
+‘all’]</p>
+</dd>
+</dl>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tokens</strong> (<cite>List of str</cite>) – the input tokens</p></li>
+<li><p><strong>labels</strong> (<cite>List of str</cite>) – the labels of the tokens</p></li>
+<li><p><strong>op</strong> (<cite>str</cite>, <em>optional</em>, defaults to <cite>“del”</cite>) – a string encoding of the operator to be applied</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>the augmented tokens
+<cite>List of str</cite>: the augmented labels</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><cite>List of str</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.pair_gen.data_augmenter.Augmenter.augment_sent">
+<span class="sig-name descname"><span class="pre">augment_sent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">op</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'all'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.pair_gen.data_augmenter.Augmenter.augment_sent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Performs data augmentation on a classification example.
+Similar to augment(tokens, labels) but works for sentences
+or sentence-pairs.
+:param text: the input sentence
+:type text: <cite>str</cite>
+:param op: a string encoding of the operator to be applied
+:type op: <cite>str</cite>, <em>optional</em>, default to <cite>“all”</cite></p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>the augmented sentence</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><cite>str</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.pair_gen.data_augmenter.Augmenter.sample_position">
+<span class="sig-name descname"><span class="pre">sample_position</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tokens</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">labels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tfidf</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.pair_gen.data_augmenter.Augmenter.sample_position" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.pair_gen.data_augmenter.Augmenter.sample_span">
+<span class="sig-name descname"><span class="pre">sample_span</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tokens</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">labels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">span_len</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.pair_gen.data_augmenter.Augmenter.sample_span" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-matchbench.pair_gen.neg_sampler">
+<span id="matchbench-pair-gen-neg-sampler-module"></span><h2>matchbench.pair_gen.neg_sampler module<a class="headerlink" href="#module-matchbench.pair_gen.neg_sampler" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="matchbench.pair_gen.neg_sampler.NegativeSampler">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">matchbench.pair_gen.neg_sampler.</span></span><span class="sig-name descname"><span class="pre">NegativeSampler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">neg_sample_batch_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">512</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">neg_num</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nearest_sample_num</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">128</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">train_batch_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">24</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.pair_gen.neg_sampler.NegativeSampler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.pair_gen.neg_sampler.NegativeSampler.generate_train_tups">
+<span class="sig-name descname"><span class="pre">generate_train_tups</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">train_ent1s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">train_ent2s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">idlist1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">idlist2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">all_emb1s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">all_emb2s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">train_emb1s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">train_emb2s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shuffle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.pair_gen.neg_sampler.NegativeSampler.generate_train_tups" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.pair_gen.neg_sampler.NegativeSampler.get_candidate_dict">
+<span class="sig-name descname"><span class="pre">get_candidate_dict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">train_ents</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">train_embs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">all_ents</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">all_embs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.pair_gen.neg_sampler.NegativeSampler.get_candidate_dict" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="matchbench.pair_gen.neg_sampler.NegativeSampler.get_dataloader">
+<span class="sig-name descname"><span class="pre">get_dataloader</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">train_ent1s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">train_ent2s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">idlist1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">idlist2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_dataset</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">all_emb1s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">all_emb2s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">train_emb1s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">train_emb2s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#matchbench.pair_gen.neg_sampler.NegativeSampler.get_dataloader" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-matchbench.pair_gen">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-matchbench.pair_gen" title="Permalink to this heading">¶</a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="matchbench.trainer.html" class="btn btn-neutral float-right" title="matchbench.trainer package" accesskey="n">Next →</a>
+      
+      
+        <a href="matchbench.model.schema_matching.html" class="btn btn-neutral" title="matchbench.model.schema_matching package" accesskey="p">← Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2023, MatchBench group.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE: 'true'
+        };
+    </script>
+      <script type="text/javascript" src="_static/documentation_options.js"></script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/sphinx_highlight.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

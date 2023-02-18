@@ -1,7 +1,7 @@
-source
-======
+matchbench
+==========
 
 .. toctree::
    :maxdepth: 4
 
-   conf
+   matchbench
